@@ -4,7 +4,7 @@ log.basicConfig(level=log.DEBUG,
                 format = '%(asctime)s: %(levelname)s [%(filename)s: %(lineno)s] %(message)s',
                 datefmt = '%I:%M:%S %p',
                 handlers = [
-                    log.FileHandler('C:\\ATMSys-1\\src\\capa_datos.log'),
+                    log.FileHandler('C:\\LibSys\\src\\capa_datos.log'),
                     log.StreamHandler()
                 ])
 

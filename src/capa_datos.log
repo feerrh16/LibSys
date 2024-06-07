@@ -1,0 +1,43 @@
+09:34:36 PM: DEBUG [Empleado.py: 63] 
+                ID Empleado: 1
+                Usuario: pepe
+                Nombre(s) = José
+                Apellido Paterno: Flores
+                Apellido Materno: Alvarado
+                
+09:35:34 PM: DEBUG [Empleado.py: 63] 
+                ID Empleado: 1
+                Usuario: pepe
+                Nombre(s) = José
+                Apellido Paterno: Flores
+                Apellido Materno: Alvarado
+                
+09:35:34 PM: DEBUG [Empleado.py: 68] 
+                ID Empleado: 2
+                Usuario: jesgut
+                Nombre(s) = Jesús
+                Apellido Paterno: Gutiérrez
+                Apellido Materno: Alvarado
+                
+09:35:34 PM: DEBUG [Empleado.py: 72] 
+                ID Empleado: 1
+                Usuario: None
+                Nombre(s) = None
+                Apellido Paterno: None
+                Apellido Materno: None
+                
+09:44:29 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+09:44:29 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000206C697B950>
+09:44:29 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000206C8852460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+09:44:29 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+09:44:29 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: name 'empleado' is not defined <class 'NameError'> <traceback object at 0x00000206C88E1EC0>
+09:44:29 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000206C8852460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+09:46:04 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+09:46:04 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001E45EBAB950>
+09:46:04 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001E460A42460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+09:46:04 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+09:46:04 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: no existe la relación «empleado»
+LINE 1: INSERT INTO empleado(nombre_usuario, nombre, apellido_patern...
+                    ^
+ <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000001E460AD88C0>
+09:46:04 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001E460A42460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>

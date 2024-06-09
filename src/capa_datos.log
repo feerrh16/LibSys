@@ -41,3 +41,36 @@ LINE 1: INSERT INTO empleado(nombre_usuario, nombre, apellido_patern...
                     ^
  <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000001E460AD88C0>
 09:46:04 PM: DEBUG [Conexion.py: 46] Conexi�n regresada al pool de conexiones: <connection object at 0x000001E460A42460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:14:06 AM: DEBUG [Usuario.py: 104] 
+                ID Cliente: 1
+                Usuario: jperez
+                Nombre(s) = axel
+                Apellido Paterno: Pérez
+                Apellido Materno: Juárez
+                Dirección asociada: 1
+                Correo: jperez@mail.com
+                Teléfono: 555 555 555
+                Tarjeta: 1111 1111 1111 1111
+                
+12:14:06 AM: DEBUG [Usuario.py: 110] 
+                ID Cliente: 2
+                Usuario: jesgut
+                Nombre(s) = Jesús
+                Apellido Paterno: Gutiérrez
+                Apellido Materno: Alvarado
+                Dirección asociada: 2
+                Correo: jesgut@mail.com
+                Teléfono: 555 555 444
+                Tarjeta: 2222 2222 2222 2222
+                
+12:14:06 AM: DEBUG [Usuario.py: 114] 
+                ID Cliente: 1
+                Usuario: None
+                Nombre(s) = None
+                Apellido Paterno: None
+                Apellido Materno: None
+                Dirección asociada: None
+                Correo: None
+                Teléfono: None
+                Tarjeta: None
+                

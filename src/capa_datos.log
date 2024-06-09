@@ -74,3 +74,48 @@ LINE 1: INSERT INTO empleado(nombre_usuario, nombre, apellido_patern...
                 Teléfono: None
                 Tarjeta: None
                 
+12:53:43 AM: DEBUG [Direccion.py: 68] 
+                ID Direccion: 2
+                ID Cliente: 23312
+                Direccion: Juan Gomez Albarran 18
+                Ciudad: Ciudad de Mexico
+                Municipio: Gustavo A Madero
+                Codigo Postal: 78000
+                
+12:53:43 AM: DEBUG [Direccion.py: 73] 
+                ID Direccion: 2
+                ID Cliente: 23312
+                Direccion: Juan Gomez Albarran 18
+                Ciudad: Ciudad de Mexico
+                Municipio: Gustavo A Madero
+                Codigo Postal: 78000
+                
+12:53:43 AM: DEBUG [Direccion.py: 77] 
+                ID Direccion: 2
+                ID Cliente: None
+                Direccion: None
+                Ciudad: None
+                Municipio: None
+                Codigo Postal: None
+                
+01:52:01 PM: DEBUG [Tarjeta.py: 64] 
+                Numero de Tarjeta: 543527364591827
+                ID Cliente: 457876
+                CVV: 577
+                Fecha de Vencimiento: 23/12/29
+                Banco: Santander
+                
+01:52:01 PM: DEBUG [Tarjeta.py: 69] 
+                Numero de Tarjeta: 5354435634522345
+                ID Cliente: 233
+                CVV: 332
+                Fecha de Vencimiento: 24/01/24
+                Banco: Santander
+                
+01:52:01 PM: DEBUG [Tarjeta.py: 73] 
+                Numero de Tarjeta: 5354435634522345
+                ID Cliente: 233
+                CVV: 332
+                Fecha de Vencimiento: 24/01/24
+                Banco: Santander
+                

@@ -1,67 +1,67 @@
 from logger_base import *
-from Persona import *
+from Usuario import *
 from Conexion import *
 from cursor_del_pool import *
 
-class PersonaDAO:
-    _SELECCIONAR = 'SELECT * FROM persona ORDER BY id_persona'
-    _INSERTAR = 'INSERT INTO persona(nombre, apellido, mail) VALUES(%s, %s, %s)'
-    _ACTUALIZAR = 'UPDATE persona SET nombre = %s, apellido = %s, mail = %s WHERE id_persona = %s'
-    _BORRAR = 'DELETE FROM persona WHERE id_persona = %s'
+class UsuarioDAO:
+    _SELECCIONAR = 'SELECT * FROM usuario ORDER BY nombre_usuario'
+    _INSERTAR = 'INSERT INTO usuario(nombre_usuario, contrasena, rol) VALUES(%s, %s, %s)'
+    _ACTUALIZAR = 'UPDATE usuario SET contrasena = %s, rol = %s WHERE nombre_usuario = %s'
+    _BORRAR = 'DELETE FROM usuario WHERE nombre_usuario = %s'
 
     @classmethod
     def seleccionar(cls):
         with CursorDelPool() as cursor:
             cursor.execute(cls._SELECCIONAR)
             registros = cursor.fetchall()
-            personas = []
+            usuarios = []
             for registro in registros:
-                persona = Persona(registro[0], registro[1], registro[2], registro[3])
-                personas.append(persona)
-            return personas
+                usuario = Usuario(registro[0], registro[1], registro[2])
+                usuarios.append(usuario)
+            return usuarios
         
     @classmethod
-    def insertar(cls, persona):
+    def insertar(cls, usuario):
         with CursorDelPool() as cursor:
-            valores = (persona.nombre, persona.apellido, persona.mail)
+            valores = (usuario.nombre_usuario, usuario.contrasena, usuario.rol)
             cursor.execute(cls._INSERTAR, valores)
-            log.debug(f'Registro insertado en la base de datos: {persona}')
+            log.debug(f'Registro insertado en la base de datos: {usuario}')
             return cursor.rowcount
         
     @classmethod
-    def actualizar(cls, persona):
+    def actualizar(cls, usuario):
         with CursorDelPool() as cursor:
-            valores = (persona.nombre, persona.apellido, persona.mail, persona.id_persona)
+            valores = (usuario.contrasena, usuario.rol, usuario.nombre_usuario)
             cursor.execute(cls._ACTUALIZAR, valores)
-            log.debug(f'Registro actualizado: {persona}')
+            log.debug(f'Registro actualizado: {usuario}')
             return cursor.rowcount
 
     @classmethod
-    def borrar(cls, persona):
+    def borrar(cls, usuario):
         with CursorDelPool() as cursor:
-            valores = (persona.id_persona, )
+            valores = (usuario.nombre_usuario, )
             cursor.execute(cls._BORRAR, valores)
-            log.debug(f'Registro eliminado: {persona}')
+            log.debug(f'Registro eliminado: {usuario}')
             return cursor.rowcount
 
 if __name__ == '__main__':
     # Insertar un registro
-    persona1 = Persona(nombre = 'Alejandra', apellido = 'Téllez', mail = 'atellez@mail.com')
-    personas_insertadas = PersonaDAO.insertar(persona1)
-    log.debug(f'Registro insertado en la base de datos: {personas_insertadas}')
+    usuario1 = Usuario(nombre_usuario = 'jperez', contrasena = 'password', rol = 'Ayudante General')
+    usuarios_insertados = UsuarioDAO.insertar(usuario1)
+    log.debug(f'Registro insertado en la base de datos: {usuarios_insertados}')
 
     # Actualizar un registro
-    persona1 = Persona(1, 'Juan', 'Pérez', 'jperez@mail.com')
-    personas_actualizadas = PersonaDAO.actualizar(persona1)
-    log.debug(f'Registros actualizados: {personas_actualizadas}')
+    usuario1 = Usuario('jperez', 'drowssap', 'Gerente')
+    usuarios_actualizados = UsuarioDAO.actualizar(usuario1)
+    log.debug(f'Registros actualizados: {usuarios_actualizados}')
     
 
     # Eliminar un registro
-    persona1 = Persona(id_persona = 16)
-    personas_eliminadas = PersonaDAO.borrar(persona1)
-    log.debug(f'Registros eliminados: {personas_eliminadas}')
+    usuario1 = Usuario(id_persona = 1)
+    usuarios_eliminados = UsuarioDAO.borrar(usuario1)
+    log.debug(f'Registros eliminados: {usuarios_eliminados}')
     
     # Seleccionar objetos
-    personas = PersonaDAO.seleccionar()
-    for persona in personas:
-        log.debug(persona)
+    usuarios = UsuarioDAO.seleccionar()
+    for usuario in usuarios:
+        log.debug(usuario)

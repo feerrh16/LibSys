@@ -1,0 +1,111 @@
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/*Header y menu de libros*/
+header {
+    background-color: #f3e5ab;
+    background-size: cover;
+
+}
+
+.nav-pag {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-pag a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.menu nav {
+    background: #eee4bc;
+    border: 1px solid;
+    border-right: 1px solid;
+    position: relative;
+}
+
+.menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.menu nav>ul>li {
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 20px;
+}
+
+.menu ul li a:hover {
+    background: #e3decc;
+}
+
+.menu nav>ul>li:hover div {
+    display: table;
+}
+
+/*submenu*/
+
+.menu nav ul li div {
+    position: absolute;
+    left: 0;
+    background: #e3decc;
+    box-sizing: border-box;
+    display: none;
+}
+
+.menu nav ul li div ul {
+    width: 10%;
+    padding: 10px 20px;
+    display: table-cell;
+    border-right: 1px solid rgb(0, 0, 0, .5);
+    box-sizing: border-box;
+
+}
+
+.menu nav ul li div ul:last-child {
+    border: none;
+}
+
+.menu nav ul li div ul .titulo {
+    /*text-align: center;*/
+    background: #d3c692;
+    padding: 10px 40px;
+    border-top: 1px solid rgb(0, 0, 0, .5);
+}
+
+
+@media (max-width: 700px) {
+    .nav-pag {
+        flex-direction: column;
+    }
+
+}

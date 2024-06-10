@@ -1,0 +1,367 @@
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/*Header*/
+header {
+    background-color: #f3e5ab;
+    background-size: cover;
+
+}
+
+.nav-pag {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-pag a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.nav-pag h2{
+    font-size: 30px;
+}
+
+.buscador {
+    display: flex;
+}
+
+.buscador input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.buscador button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #333;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/*Menu*/
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.menu nav {
+    background: #eee4bc;
+    border: 1px solid;
+    border-right: 1px solid;
+    position: relative;
+}
+
+.menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.menu nav>ul>li {
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 20px;
+}
+
+.menu ul li a:hover {
+    background: #e3decc;
+}
+
+.menu nav>ul>li:hover div {
+    display: table;
+}
+
+/*submenu*/
+
+.menu nav ul li div {
+    position: absolute;
+    left: 0;
+    background: #e3decc;
+    box-sizing: border-box;
+    display: none;
+}
+
+.menu nav ul li div ul {
+    width: 10%;
+    padding: 10px 20px;
+    display: table-cell;
+    border-right: 1px solid rgb(0, 0, 0, .5);
+    box-sizing: border-box;
+
+}
+
+.menu nav ul li div ul:last-child {
+    border: none;
+}
+
+.menu nav ul li div ul .titulo {
+    /*text-align: center;*/
+    background: #d3c692;
+    padding: 10px 40px;
+    border-top: 1px solid rgb(0, 0, 0, .5);
+}
+
+/*Slider*/
+
+.slider {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    min-height: 60vh;
+    z-index: 1;
+}
+
+.cartas {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+}
+
+.cartas .cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.cartas .frontal {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px #000;
+}
+
+.cartas .frontal img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cartas .frontal h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.cartas .posterior {
+    transform: perspective(600px) rotateY(180deg);
+    background: #f3e5ab;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.cartas .posterior .link {
+    border-top: solid 1px;
+    height: 75px;
+    line-height: 20px;
+}
+
+.cartas .posterior .link a {
+    color: #000;
+}
+
+.cartas .posterior h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.cartas .posterior p {
+    font-size:smaller;
+    padding: 10px 0 0 10px;
+    letter-spacing: 1px;
+}
+
+.cartas:hover .frontal {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.cartas:hover .posterior {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.cartas .posterior a {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.cartas .posterior a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/*Menu de libros*/
+
+.productos{
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+}
+
+.conten-lib{
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+
+.libro{
+    border-top: 2px solid;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px ;
+    display: none;
+}
+
+.libro:nth-child(1),
+.libro:nth-child(2),
+.libro:nth-child(3),
+.libro:nth-child(4),
+.libro:nth-child(5){
+    display: inline-block;
+}
+
+.libro img{
+    height: 200px;
+}
+
+.text-lib h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-lib p{
+    margin-bottom: 25px;
+}
+
+.precio{
+    font-size: 17px !important;
+    font-weight: 700 !important;
+}
+
+.btn-2, .btn-3{
+    background-color: #f3e5ab;
+    margin-top: 50px;
+    display: inline-block;
+    padding: 11px 35px;
+    border-radius: 25px;
+    color:#000;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px;
+}
+
+.btn-2:hover, .btn-3:hover{
+    background-color:#d3c692;
+
+}
+
+/*Footer*/
+
+.footer{
+    background-color: #f3e5ab;
+    padding: 100px 0;
+}
+
+.footer-cont{
+    display: flex;
+    justify-content: space-around;
+}
+
+.link h3{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.link a{
+    color: #000;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link a:hover{
+    color:blue;
+}
+
+@media (max-width: 761px) {
+    /*Header*/
+    .nav-pag {
+        flex-direction: colum;
+    }
+    .nav-pag h2{
+        font-size: 25px;
+    }
+   
+    .buscador input[type="text"] {
+        flex: 1;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+    }
+    /*Menu - Submenu*/
+    .menu{
+        display: none;
+    }
+    /*slider*/
+    .cartas {
+        position: relative;
+        width: 250px;
+        height: 300px;
+        margin: 10px;
+    }
+
+    .cartas:nth-child(3){
+        display: none;
+    }
+
+    /*Productos*/
+    .productos{
+        padding: 0 30px 30px 30px;
+    }
+}

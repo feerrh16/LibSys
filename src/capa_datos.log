@@ -1,22 +1,22 @@
 09:34:36 PM: DEBUG [Empleado.py: 63] 
                 ID Empleado: 1
                 Usuario: pepe
-                Nombre(s) = José
+                Nombre(s) = Josï¿½
                 Apellido Paterno: Flores
                 Apellido Materno: Alvarado
                 
 09:35:34 PM: DEBUG [Empleado.py: 63] 
                 ID Empleado: 1
                 Usuario: pepe
-                Nombre(s) = José
+                Nombre(s) = Josï¿½
                 Apellido Paterno: Flores
                 Apellido Materno: Alvarado
                 
 09:35:34 PM: DEBUG [Empleado.py: 68] 
                 ID Empleado: 2
                 Usuario: jesgut
-                Nombre(s) = Jesús
-                Apellido Paterno: Gutiérrez
+                Nombre(s) = Jesï¿½s
+                Apellido Paterno: Gutiï¿½rrez
                 Apellido Materno: Alvarado
                 
 09:35:34 PM: DEBUG [Empleado.py: 72] 
@@ -26,62 +26,61 @@
                 Apellido Paterno: None
                 Apellido Materno: None
                 
-09:44:29 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
-09:44:29 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000206C697B950>
+09:44:29 PM: DEBUG [cursor_del_pool.py: 11] Inicio del mï¿½todo with __enter__
+09:44:29 PM: DEBUG [Conexion.py: 29] Creaciï¿½n exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000206C697B950>
 09:44:29 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000206C8852460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
-09:44:29 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
-09:44:29 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: name 'empleado' is not defined <class 'NameError'> <traceback object at 0x00000206C88E1EC0>
-09:44:29 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000206C8852460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
-09:46:04 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
-09:46:04 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001E45EBAB950>
+09:44:29 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el mï¿½todo __exit__
+09:44:29 PM: ERROR [cursor_del_pool.py: 20] Ocurriï¿½ una excepciï¿½n, rollback realizado: name 'empleado' is not defined <class 'NameError'> <traceback object at 0x00000206C88E1EC0>
+09:44:29 PM: DEBUG [Conexion.py: 46] Conexiï¿½n regresada al pool de conexiones: <connection object at 0x00000206C8852460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+09:46:04 PM: DEBUG [cursor_del_pool.py: 11] Inicio del mï¿½todo with __enter__
+09:46:04 PM: DEBUG [Conexion.py: 29] Creaciï¿½n exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001E45EBAB950>
 09:46:04 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001E460A42460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
-09:46:04 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
-09:46:04 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: no existe la relación «empleado»
+09:46:04 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el mï¿½todo __exit__
+09:46:04 PM: ERROR [cursor_del_pool.py: 20] Ocurriï¿½ una excepciï¿½n, rollback realizado: no existe la relaciï¿½n ï¿½empleadoï¿½
 LINE 1: INSERT INTO empleado(nombre_usuario, nombre, apellido_patern...
                     ^
  <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000001E460AD88C0>
-09:46:04 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001E460A42460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
-<<<<<<< HEAD
+09:46:04 PM: DEBUG [Conexion.py: 46] Conexiï¿½n regresada al pool de conexiones: <connection object at 0x000001E460A42460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
 02:47:18 PM: DEBUG [Usuario.py: 42] 
                 Usuario: jperez
-                Contraseña: password
+                Contraseï¿½a: password
                 Rol = Ayudante General
                 
 02:47:18 PM: DEBUG [Usuario.py: 46] 
                 Usuario: davidma
-                Contraseña: password
+                Contraseï¿½a: password
                 Rol = Recepcionista
                 
 02:47:48 PM: DEBUG [Usuario.py: 42] 
                 Usuario: jperez
-                Contraseña: password
+                Contraseï¿½a: password
                 Rol = Ayudante General
                 
 02:47:48 PM: DEBUG [Usuario.py: 46] 
                 Usuario: davidma
-                Contraseña: password
+                Contraseï¿½a: password
                 Rol = Recepcionista
                 
 02:47:48 PM: DEBUG [Usuario.py: 50] 
                 Usuario: jperez
-                Contraseña: None
+                Contraseï¿½a: None
                 Rol = None
                 
-02:57:58 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
-02:57:58 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000002884F0663F0>
+02:57:58 PM: DEBUG [cursor_del_pool.py: 11] Inicio del mï¿½todo with __enter__
+02:57:58 PM: DEBUG [Conexion.py: 29] Creaciï¿½n exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000002884F0663F0>
 02:57:58 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002884F056350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
-02:57:58 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
-02:57:58 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: no existe la relación «usuario»
+02:57:58 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el mï¿½todo __exit__
+02:57:58 PM: ERROR [cursor_del_pool.py: 20] Ocurriï¿½ una excepciï¿½n, rollback realizado: no existe la relaciï¿½n ï¿½usuarioï¿½
 LINE 1: INSERT INTO usuario(nombre_usuario, contrasena, rol) VALUES(...
                     ^
  <class 'psycopg2.errors.UndefinedTable'> <traceback object at 0x000002884F0F1F40>
-02:57:58 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002884F056350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:57:58 PM: DEBUG [Conexion.py: 46] Conexiï¿½n regresada al pool de conexiones: <connection object at 0x000002884F056350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
 03:45:27 PM: DEBUG [Libro.py: 96] 
                 ISBN: 978-0-306-40615-7
                 ID Autor: 10
-                Título: PHP 5
-                Género: Programación
-                Año: 2023
+                Tï¿½tulo: PHP 5
+                Gï¿½nero: Programaciï¿½n
+                Aï¿½o: 2023
                 Editorial: Planeta
                 Precio: $399.0
                 Cantidad: 1
@@ -90,9 +89,9 @@ LINE 1: INSERT INTO usuario(nombre_usuario, contrasena, rol) VALUES(...
 03:45:27 PM: DEBUG [Libro.py: 102] 
                 ISBN: 978-0-306-40615-8
                 ID Autor: 12
-                Título: Análisis Vectorial
-                Género: Matemáticas
-                Año: 1999
+                Tï¿½tulo: Anï¿½lisis Vectorial
+                Gï¿½nero: Matemï¿½ticas
+                Aï¿½o: 1999
                 Editorial: Cambridge
                 Precio: $599.0
                 Cantidad: 2
@@ -101,14 +100,13 @@ LINE 1: INSERT INTO usuario(nombre_usuario, contrasena, rol) VALUES(...
 03:45:27 PM: DEBUG [Libro.py: 106] 
                 ISBN: 978-0-306-40615-7
                 ID Autor: None
-                Título: None
-                Género: None
-                Año: None
+                Tï¿½tulo: None
+                Gï¿½nero: None
+                Aï¿½o: None
                 Editorial: None
                 Precio: $None
                 Cantidad: None
                 Disponibilidad: None
-=======
 12:14:06 AM: DEBUG [Usuario.py: 104] 
                 ID Cliente: 1
                 Usuario: jperez
@@ -186,5 +184,4 @@ LINE 1: INSERT INTO usuario(nombre_usuario, contrasena, rol) VALUES(...
                 CVV: 332
                 Fecha de Vencimiento: 24/01/24
                 Banco: Santander
->>>>>>> b30bbb7b26079de082d8dc0cd360869d93e8f5d2
                 

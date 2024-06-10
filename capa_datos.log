@@ -1,0 +1,57 @@
+03:54:36 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:54:36 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001E43B5FE150>
+03:54:36 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001E43CE6A350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:54:36 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:54:36 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: el valor es demasiado largo para el tipo character varying(16)
+ <class 'psycopg2.errors.StringDataRightTruncation'> <traceback object at 0x000001E43CF02CC0>
+03:54:36 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001E43CE6A350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:55:51 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:55:52 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001C4A914BFE0>
+03:55:52 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001C4A90D2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:55:52 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:55:52 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: inserción o actualización en la tabla «empleado» viola la llave foránea «fk_usuario_empleado»
+DETAIL:  La llave (nombre_usuario)=(JK_2405) no está presente en la tabla «usuario».
+ <class 'psycopg2.errors.ForeignKeyViolation'> <traceback object at 0x000001C4A91610C0>
+03:55:52 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001C4A90D2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:56:57 PM: DEBUG [Libro.py: 96] 
+                ISBN: 978-0-306-40615-7
+                ID Autor: 10
+                Título: PHP 5
+                Género: Programación
+                Año: 2023
+                Editorial: Planeta
+                Precio: $399.0
+                Cantidad: 1
+                Disponibilidad: 10
+                
+03:56:57 PM: DEBUG [Libro.py: 102] 
+                ISBN: 978-0-306-40615-8
+                ID Autor: 12
+                Título: Análisis Vectorial
+                Género: Matemáticas
+                Año: 1999
+                Editorial: Cambridge
+                Precio: $599.0
+                Cantidad: 2
+                Disponibilidad: 14
+                
+03:56:57 PM: DEBUG [Libro.py: 106] 
+                ISBN: 978-0-306-40615-7
+                ID Autor: None
+                Título: None
+                Género: None
+                Año: None
+                Editorial: None
+                Precio: $None
+                Cantidad: None
+                Disponibilidad: None
+                
+03:57:11 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:57:11 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001BDE948B950>
+03:57:11 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001BDEB37A350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:57:11 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:57:11 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: no existe la columna «id_autor» en la relación «libro»
+LINE 1: INSERT INTO libro(ISBN, id_autor, titulo, genero, anio, edit...
+                                ^
+ <class 'psycopg2.errors.UndefinedColumn'> <traceback object at 0x000001BDEB412D80>
+03:57:11 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001BDEB37A350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>

@@ -98,7 +98,7 @@ if __name__ == '__main__':
     # Simular un INSERT INTO
     libro1 = Libro(ISBN = '978-0-306-40615-8', id_autor = '12', titulo = 'Análisis Vectorial', 
                    genero = 'Matemáticas', anio = '1999', editorial = 'Cambridge', precio = 599.00, 
-                   cantidad = 2, disponibilidad = 13)
+                   cantidad = 2, disponibilidad = 14)
     log.debug(libro1)
 
     #Simular un DELETE

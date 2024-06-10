@@ -26,7 +26,7 @@ DROP TABLE IF EXISTS `autor`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `autor` (
   `ID_Autor` int NOT NULL AUTO_INCREMENT,
-  `Nombre` varchar(45) NOT NULL,
+  `Nombre` varchar(100) NOT NULL,
   PRIMARY KEY (`ID_Autor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -75,12 +75,12 @@ DROP TABLE IF EXISTS `cliente`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `cliente` (
   `ID_Cliente` int NOT NULL AUTO_INCREMENT,
-  `Nombre_Usuario` varchar(45) NOT NULL,
-  `Nombre` varchar(45) NOT NULL,
-  `Apellido_Paterno` varchar(45) NOT NULL,
-  `Apellido_Materno` varchar(45) NOT NULL,
+  `Nombre_Usuario` varchar(50) NOT NULL,
+  `Nombre` varchar(50) NOT NULL,
+  `Apellido_Paterno` varchar(50) NOT NULL,
+  `Apellido_Materno` varchar(50) NOT NULL,
   `ID_Direccion` int NOT NULL,
-  `Correo` varchar(45) NOT NULL,
+  `Correo` varchar(50) NOT NULL,
   `Telefono` int NOT NULL,
   `Num_Tarjeta` int NOT NULL,
   PRIMARY KEY (`ID_Cliente`),
@@ -112,9 +112,9 @@ DROP TABLE IF EXISTS `direccion`;
 CREATE TABLE `direccion` (
   `ID_Direccion` int NOT NULL AUTO_INCREMENT,
   `ID_Cliente` int NOT NULL,
-  `Direccion` varchar(45) NOT NULL,
-  `Ciudad` varchar(45) NOT NULL,
-  `Municipio` varchar(45) NOT NULL,
+  `Direccion` varchar(60) NOT NULL,
+  `Ciudad` varchar(60) NOT NULL,
+  `Municipio` varchar(60) NOT NULL,
   `CP` int NOT NULL,
   PRIMARY KEY (`ID_Direccion`),
   KEY `ID_Cliente_Direccion_idx` (`ID_Cliente`),
@@ -140,10 +140,10 @@ DROP TABLE IF EXISTS `empleado`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `empleado` (
   `ID_Empleado` int NOT NULL AUTO_INCREMENT,
-  `Nombre_Usuario` varchar(45) NOT NULL,
-  `Nombre` varchar(45) NOT NULL,
-  `Apellido_Materno` varchar(45) NOT NULL,
-  `Apellido_Paterno` varchar(45) NOT NULL,
+  `Nombre_Usuario` varchar(50) NOT NULL,
+  `Apellido_Materno` varchar(50) NOT NULL,
+  `Nombre` varchar(50) NOT NULL,
+  `Apellido_Paterno` varchar(50) NOT NULL,
   PRIMARY KEY (`ID_Empleado`),
   KEY `Nombre_Usuario_Empleado_idx` (`Nombre_Usuario`),
   CONSTRAINT `Nombre_Usuario_Empleado` FOREIGN KEY (`Nombre_Usuario`) REFERENCES `usuario` (`Nombre_Usuario`)
@@ -256,7 +256,7 @@ DROP TABLE IF EXISTS `proveedor`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `proveedor` (
   `ID_Proveedor` int NOT NULL AUTO_INCREMENT,
-  `Nombre` varchar(45) NOT NULL,
+  `Nombre` varchar(50) NOT NULL,
   `Tel_Contacto` int NOT NULL,
   PRIMARY KEY (`ID_Proveedor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -330,8 +330,8 @@ DROP TABLE IF EXISTS `usuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usuario` (
-  `Nombre_Usuario` varchar(45) NOT NULL,
-  `Contrasena` varchar(45) NOT NULL,
+  `Nombre_Usuario` varchar(50) NOT NULL,
+  `Contrasena` varchar(50) NOT NULL,
   `Rol` varchar(45) NOT NULL,
   PRIMARY KEY (`Nombre_Usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -411,4 +411,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-10  1:04:36
+-- Dump completed on 2024-06-10 12:27:58

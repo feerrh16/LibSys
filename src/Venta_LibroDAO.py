@@ -31,7 +31,7 @@ class Venta_LibroDAO:
     @classmethod
     def actualizar(cls, venta_libro):
         with CursorDelPool() as cursor:
-            valores = (eventa_libro.id_venta, venta_libro.ISBN, venta_libro.cantidad)
+            valores = (venta_libro.id_venta, venta_libro.ISBN, venta_libro.cantidad)
             cursor.execute(cls._ACTUALIZAR, valores)
             log.debug(f'Registro actualizado: {venta_libro}')
             return cursor.rowcount
@@ -39,7 +39,7 @@ class Venta_LibroDAO:
     @classmethod
     def borrar(cls, venta_libro):
         with CursorDelPool() as cursor:
-            valores = (eventa_libro.id_venta, venta_libro.ISBN, venta_libro.cantidad)
+            valores = (venta_libro.id_venta, venta_libro.ISBN, venta_libro.cantidad)
             cursor.execute(cls._BORRAR, valores)
             log.debug(f'Registro eliminado: {venta_libro}')
             return cursor.rowcount

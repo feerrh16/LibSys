@@ -2,50 +2,50 @@ from logger_base import *
 
 
 class Proveedor:
-    def __init__(self, id_Proveedor = None, Nombre = None, Tel_Contacto = None):
-        self._id_Proveedor = id_Proveedor
-        self._Nombre = Nombre
-        self._Tel_Contacto = Tel_Contacto
+    def __init__(self, id_proveedor = None, nombre = None, tel_contacto = None):
+        self._id_proveedor = id_proveedor
+        self._nombre = nombre
+        self._tel_contacto = tel_contacto
     
     def __str__(self):
         return f'''
-                ID Proveedor: {self._id_Proveedor}
-                ID Nombre: {self._Nombre}
-                Tel Contacto: {self._Tel_Contacto}
+                ID Proveedor: {self._id_proveedor}
+                Nombre: {self._nombre}
+                Teléfono de contacto: {self._tel_contacto}
                 '''
 
     @property
-    def id_Proveedor(self):
-        return self._id_Proveedor
+    def id_proveedor(self):
+        return self._id_proveedor
 
-    @id_Proveedor.setter
-    def id_Proveedor(self, id_Proveedor):
-        self._id_Proveedor = id_Proveedor
-
-    @property
-    def Nombre(self):
-        return self._Nombre
-
-    @Nombre.setter
-    def Nombre(self, Nombre):
-        self._Nombre = Nombre
+    @id_proveedor.setter
+    def id_proveedor(self, id_proveedor):
+        self._id_proveedor = id_proveedor
 
     @property
-    def Tel_Contacto(self):
-        return self._Tel_Contacto
+    def nombre(self):
+        return self._nombre
 
-    @Tel_Contacto.setter
-    def Tel_Contacto(self, Tel_Contacto):
-        self._Tel_Contacto = Tel_Contacto
+    @nombre.setter
+    def nombre(self, nombre):
+        self._Nombre = nombre
+
+    @property
+    def tel_contacto(self):
+        return self._tel_contacto
+
+    @tel_contacto.setter
+    def tel_contacto(self, tel_contacto):
+        self._Tel_Contacto = tel_contacto
 
 if __name__ == '__main__':
-    Proveedor1 = Proveedor(id_Proveedor= 2, Nombre= 'Sandra', Tel_Contacto= '1345566')
-    log.debug(Proveedor1)
+    proveedor1 = Proveedor(id_proveedor= 2, nombre= 'Sandra', tel_contacto= '1345566')
+    log.debug(proveedor1)
 
     # Simular un INSERT INTO
-    Proveedor1 = Proveedor(id_Proveedor= 2, Nombre= 'Sandra', Tel_Contacto= '1345566')
-    log.debug(Proveedor1)
+    proveedor1 = Proveedor(id_proveedor= 2, nombre= 'Sandra', tel_contacto= '1345566')
+    log.debug(proveedor1)
 
     # Simular un DELETE
-    Proveedor1 = Proveedor(id_Proveedor=2)
-    log.debug(Proveedor1)
+    proveedor1 = Proveedor(id_proveedor=2)
+    log.debug(proveedor1)

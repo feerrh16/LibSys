@@ -55,3 +55,954 @@ LINE 1: INSERT INTO libro(ISBN, id_autor, titulo, genero, anio, edit...
                                 ^
  <class 'psycopg2.errors.UndefinedColumn'> <traceback object at 0x000001BDEB412D80>
 03:57:11 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001BDEB37A350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+11:49:48 PM: DEBUG [Autor_Libro.py: 32] 
+                ID Autor: 1
+                ISBN: 9796078828326
+                
+11:49:48 PM: DEBUG [Autor_Libro.py: 36] 
+                ID Autor: 2
+                ISBN: 9796078828327
+                
+11:49:48 PM: DEBUG [Autor_Libro.py: 40] 
+                ID Autor: 1
+                ISBN: None
+                
+11:50:21 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+11:50:22 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000020150F5B950>
+11:50:22 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000020152E0E350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+11:50:22 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+11:50:22 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: not all arguments converted during string formatting <class 'TypeError'> <traceback object at 0x0000020152E925C0>
+11:50:22 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000020152E0E350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+11:52:39 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+11:52:39 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000018A7908E0C0>
+11:52:39 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000018A79036350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+11:52:39 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+11:52:39 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: not all arguments converted during string formatting <class 'TypeError'> <traceback object at 0x0000018A790C4C40>
+11:52:39 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000018A79036350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+11:54:03 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+11:54:03 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000261098EE0C0>
+11:54:03 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000026109896350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+11:54:03 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+11:54:03 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: not all arguments converted during string formatting <class 'TypeError'> <traceback object at 0x0000026109924C40>
+11:54:03 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000026109896350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+11:55:48 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+11:55:48 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001FF9E78E0C0>
+11:55:48 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001FF9E736350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+11:55:48 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+11:55:48 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: not all arguments converted during string formatting <class 'TypeError'> <traceback object at 0x000001FF9E7C4C40>
+11:55:48 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001FF9E736350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:00:14 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:00:14 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000232727796A0>
+12:00:14 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000023274032350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:00:14 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:00:14 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: el valor «9796078828326» está fuera de rango para el tipo integer
+LINE 1: INSERT INTO autor_libro(id_autor, ISBN) VALUES(1, '979607882...
+                                                          ^
+ <class 'psycopg2.errors.NumericValueOutOfRange'> <traceback object at 0x00000232740C4D00>
+12:00:14 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000023274032350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:02:40 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:02:40 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000164E383B950>
+12:02:40 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000164E5762350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:02:40 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:02:40 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: la sintaxis de entrada no es válida para tipo integer: «978-0-306-40615-7»
+LINE 1: INSERT INTO autor_libro(id_autor, ISBN) VALUES(1, '978-0-306...
+                                                          ^
+ <class 'psycopg2.errors.InvalidTextRepresentation'> <traceback object at 0x00000164E57F4CC0>
+12:02:40 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000164E5762350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:03:42 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:03:42 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001F04E36B950>
+12:03:42 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001F050212350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:03:42 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:03:42 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: la sintaxis de entrada no es válida para tipo bigint: «978-0-306-40615-7»
+LINE 1: INSERT INTO autor_libro(id_autor, ISBN) VALUES(1, '978-0-306...
+                                                          ^
+ <class 'psycopg2.errors.InvalidTextRepresentation'> <traceback object at 0x000001F0502A0D80>
+12:03:42 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001F050212350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:04:24 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:04:24 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001CC3023C5F0>
+12:04:24 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001CC31D62350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:04:24 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:04:24 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: inserción o actualización en la tabla «autor_libro» viola la llave foránea «fk_autor»
+DETAIL:  La llave (id_autor)=(1) no está presente en la tabla «autor».
+ <class 'psycopg2.errors.ForeignKeyViolation'> <traceback object at 0x000001CC31DF4CC0>
+12:04:24 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001CC31D62350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:05:00 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:05:00 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000020A924D4590>
+12:05:00 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000020A940B2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:05:00 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:05:00 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: not all arguments converted during string formatting <class 'TypeError'> <traceback object at 0x0000020A94144980>
+12:05:00 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000020A940B2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:05:50 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:05:50 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000022D164DE0C0>
+12:05:50 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000022D16486350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:05:50 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:05:50 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: not all arguments converted during string formatting <class 'TypeError'> <traceback object at 0x0000022D16514A40>
+12:05:50 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000022D16486350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:11:31 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:11:31 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000002661666B950>
+12:11:31 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000026618546350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:11:31 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:11:31 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: not all arguments converted during string formatting <class 'TypeError'> <traceback object at 0x00000266185D4AC0>
+12:11:31 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000026618546350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:12:04 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:12:04 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000253A5ADB950>
+12:12:04 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000253A79E6350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:12:04 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:12:04 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: not all arguments converted during string formatting <class 'TypeError'> <traceback object at 0x00000253A7A74D00>
+12:12:04 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000253A79E6350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:16:02 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:16:02 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001B54271B950>
+12:16:02 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001B5445D2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:16:02 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:16:02 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: no existe la columna «isbn» en la relación «autor_libro»
+LINE 1: INSERT INTO autor_libro(id_autor, ISBN) VALUES(2, '979607882...
+                                          ^
+ <class 'psycopg2.errors.UndefinedColumn'> <traceback object at 0x000001B544664D40>
+12:16:02 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001B5445D2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:20:47 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000014FA65CA630>
+12:20:47 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000014FA65C2130; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:20:47 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000014FA65C2130; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:20:52 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:20:52 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000025DAB6096A0>
+12:20:52 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000025DACEB2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:20:52 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:20:52 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: no existe la columna «isbn» en la relación «autor_libro»
+LINE 1: INSERT INTO autor_libro(id_autor, ISBN) VALUES(2, '979607882...
+                                          ^
+ <class 'psycopg2.errors.UndefinedColumn'> <traceback object at 0x0000025DACF44D40>
+12:20:52 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000025DACEB2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:22:11 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:22:11 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000274B9E596A0>
+12:22:11 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000274BB8B2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:22:11 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:22:11 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: no existe la columna «isbn» en la relación «autor_libro»
+LINE 1: INSERT INTO autor_libro(id_autor, ISBN) VALUES(2, '979607882...
+                                          ^
+ <class 'psycopg2.errors.UndefinedColumn'> <traceback object at 0x00000274BB944D00>
+12:22:11 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000274BB8B2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:22:38 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:22:39 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000021762D9E0C0>
+12:22:39 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000021762D46350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:22:39 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:22:39 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: not all arguments converted during string formatting <class 'TypeError'> <traceback object at 0x0000021762DD4A40>
+12:22:39 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000021762D46350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:23:53 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:23:53 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001EFAA9596A0>
+12:23:53 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001EFAC3D2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:23:53 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:23:53 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: no existe la columna «isbn» en la relación «autor_libro»
+LINE 1: INSERT INTO autor_libro(id_autor, ISBN) VALUES(3, '978030640...
+                                          ^
+ <class 'psycopg2.errors.UndefinedColumn'> <traceback object at 0x000001EFAC464D40>
+12:23:53 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001EFAC3D2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:27:47 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:27:47 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000247E517D850>
+12:27:47 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000247E5122350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:27:47 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:27:47 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: not all arguments converted during string formatting <class 'TypeError'> <traceback object at 0x00000247E51B4B40>
+12:27:47 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000247E5122350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:57:28 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:57:28 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001403D8496A0>
+12:57:28 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001403F102350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:57:28 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:57:28 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: el valor «9780306406157» está fuera de rango para el tipo integer
+LINE 1: INSERT INTO autor_libro(id_autor, ISBN) VALUES(3, '978030640...
+                                                          ^
+ <class 'psycopg2.errors.NumericValueOutOfRange'> <traceback object at 0x000001403F194D00>
+12:57:28 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001403F102350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+10:58:26 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+10:58:26 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000223AB7AB950>
+10:58:26 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000223AD652350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+10:58:26 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+10:58:26 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: inserción o actualización en la tabla «autor_libro» viola la llave foránea «fk_libro»
+DETAIL:  La llave (isbn)=(9780306406157) no está presente en la tabla «libro».
+ <class 'psycopg2.errors.ForeignKeyViolation'> <traceback object at 0x00000223AD6E4AC0>
+10:58:26 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000223AD652350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+10:58:51 AM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+10:58:51 AM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000020FFC3DB950>
+10:58:51 AM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000020FFE2C2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+10:58:51 AM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+10:58:51 AM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: inserción o actualización en la tabla «autor_libro» viola la llave foránea «fk_autor»
+DETAIL:  La llave (id_autor)=(11) no está presente en la tabla «autor».
+ <class 'psycopg2.errors.ForeignKeyViolation'> <traceback object at 0x0000020FFE354B40>
+10:58:51 AM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000020FFE2C2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:58:38 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+12:58:38 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000002168C71B950>
+12:58:38 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002168E5B2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+12:58:38 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+12:58:38 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: inserción o actualización en la tabla «autor_libro» viola la llave foránea «fk_autor»
+DETAIL:  La llave (id_autor)=(7) no está presente en la tabla «autor».
+ <class 'psycopg2.errors.ForeignKeyViolation'> <traceback object at 0x000002168E644AC0>
+12:58:38 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002168E5B2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:00:55 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:00:55 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001F1831EB950>
+01:00:55 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001F1850F2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:00:55 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:00:55 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El autor con id_autor 7 no existe en la tabla autor. <class 'ValueError'> <traceback object at 0x000001F1838CE440>
+01:00:55 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001F1850F2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:00:55 PM: ERROR [Autor_LibroDAO.py: 59] El autor con id_autor 7 no existe en la tabla autor.
+01:00:55 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:00:55 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001F1850F2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:00:55 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:00:55 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: inserción o actualización en la tabla «autor_libro» viola la llave foránea «fk_libro»
+DETAIL:  La llave (isbn)=(9796078828326) no está presente en la tabla «libro».
+ <class 'psycopg2.errors.ForeignKeyViolation'> <traceback object at 0x000001F1851849C0>
+01:00:55 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001F1850F2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:01:47 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:01:47 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000002073A962BA0>
+01:01:47 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002073C132350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:01:47 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:01:47 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El autor con id_autor 7 no existe en la tabla autor. <class 'ValueError'> <traceback object at 0x000002073C1C0E40>
+01:01:47 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002073C132350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:01:47 PM: ERROR [Autor_LibroDAO.py: 69] El autor con id_autor 7 no existe en la tabla autor.
+01:01:47 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:01:47 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002073C132350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:01:47 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:01:47 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El libro con ISBN 9796078828326 no existe en la tabla libro. <class 'ValueError'> <traceback object at 0x000002073C1C0EC0>
+01:01:47 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002073C132350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:01:47 PM: ERROR [Autor_LibroDAO.py: 77] El libro con ISBN 9796078828326 no existe en la tabla libro.
+01:01:47 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:01:47 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002073C132350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:01:47 PM: DEBUG [Autor_LibroDAO.py: 59] Registro eliminado: 
+                ID Autor: 1
+                ISBN: None
+                
+01:01:47 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:01:47 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:01:47 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002073C132350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:01:47 PM: DEBUG [Autor_LibroDAO.py: 82] Registros eliminados: 1
+01:01:47 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:01:47 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002073C132350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:01:47 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:01:47 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:01:47 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002073C132350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:01:47 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 2
+                ISBN: 9780618260300
+                
+01:01:47 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 3
+                ISBN: 9780451524935
+                
+01:01:47 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 4
+                ISBN: 9780062073488
+                
+01:01:47 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 5
+                ISBN: 9780307743657
+                
+01:01:47 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 6
+                ISBN: 9780553293357
+                
+01:08:12 PM: DEBUG [Autor.py: 33] 
+                ID Autor: 1
+                Nombre: = Fabian Gasca
+                
+01:08:12 PM: DEBUG [Autor.py: 37] 
+                ID Autor: 2
+                Nombre: = Alice Oseman
+                
+01:08:12 PM: DEBUG [Autor.py: 41] 
+                ID Autor: 1
+                Nombre: = None
+                
+01:08:21 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:08:21 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000002D81E144590>
+01:08:21 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002D81FD2E350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:08:21 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:08:21 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: not all arguments converted during string formatting <class 'TypeError'> <traceback object at 0x000002D81E1AF740>
+01:08:21 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002D81FD2E350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:11:49 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:11:49 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000027635AFB950>
+01:11:49 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000027637A02350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:11:49 PM: DEBUG [AutorDAO.py: 28] Registro insertado en la base de datos: 
+                ID Autor: None
+                Nombre: = Fabian Gasca
+                
+01:11:49 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:11:49 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:11:49 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000027637A02350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:11:49 PM: DEBUG [AutorDAO.py: 51] Registro insertado en la base de datos: 1
+01:11:49 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:11:49 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000027637A02350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:11:49 PM: DEBUG [AutorDAO.py: 36] Registro actualizado: 
+                ID Autor: 1
+                Nombre: = Alice Oseman
+                
+01:11:49 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:11:49 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:11:49 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000027637A02350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:11:49 PM: DEBUG [AutorDAO.py: 56] Registros actualizados: 1
+01:11:49 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:11:49 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000027637A02350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:11:49 PM: DEBUG [AutorDAO.py: 44] Registro eliminado: 
+                ID Autor: 1
+                Nombre: = None
+                
+01:11:49 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:11:49 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:11:49 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000027637A02350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:11:49 PM: DEBUG [AutorDAO.py: 61] Registros eliminados: 1
+01:11:49 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:11:49 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000027637A02350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:11:49 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:11:49 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:11:49 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000027637A02350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:11:49 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 2
+                Nombre: = J.R.R. Tolkien
+                
+01:11:49 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 3
+                Nombre: = George Orwell
+                
+01:11:49 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 4
+                Nombre: = Agatha Christie
+                
+01:11:49 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 5
+                Nombre: = Stephen King
+                
+01:11:49 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 6
+                Nombre: = Isaac Asimov
+                
+01:11:49 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 7
+                Nombre: = Fabian Gasca
+                
+01:12:34 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:12:34 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001C20E6BE3F0>
+01:12:34 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001C20E662350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:12:34 PM: DEBUG [AutorDAO.py: 28] Registro insertado en la base de datos: 
+                ID Autor: 8
+                Nombre: = Fabian Gasca
+                
+01:12:34 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:12:34 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:12:34 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001C20E662350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:12:34 PM: DEBUG [AutorDAO.py: 51] Registro insertado en la base de datos: 1
+01:12:34 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:12:34 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001C20E662350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:12:34 PM: DEBUG [AutorDAO.py: 36] Registro actualizado: 
+                ID Autor: 1
+                Nombre: = Alice Oseman
+                
+01:12:34 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:12:34 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:12:34 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001C20E662350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:12:34 PM: DEBUG [AutorDAO.py: 56] Registros actualizados: 0
+01:12:34 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:12:34 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001C20E662350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:12:34 PM: DEBUG [AutorDAO.py: 44] Registro eliminado: 
+                ID Autor: 1
+                Nombre: = None
+                
+01:12:34 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:12:34 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:12:34 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001C20E662350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:12:34 PM: DEBUG [AutorDAO.py: 61] Registros eliminados: 0
+01:12:34 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:12:34 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001C20E662350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:12:34 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:12:34 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:12:34 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001C20E662350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:12:34 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 2
+                Nombre: = J.R.R. Tolkien
+                
+01:12:34 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 3
+                Nombre: = George Orwell
+                
+01:12:34 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 4
+                Nombre: = Agatha Christie
+                
+01:12:34 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 5
+                Nombre: = Stephen King
+                
+01:12:34 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 6
+                Nombre: = Isaac Asimov
+                
+01:12:34 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 7
+                Nombre: = Fabian Gasca
+                
+01:12:34 PM: DEBUG [AutorDAO.py: 66] 
+                ID Autor: 8
+                Nombre: = Fabian Gasca
+                
+01:17:56 PM: DEBUG [Tarjeta.py: 64] 
+                Numero de Tarjeta: 543527364591827
+                ID Cliente: 457876
+                CVV: 577
+                Fecha de Vencimiento: 23/12/29
+                Banco: Santander
+                
+01:17:56 PM: DEBUG [Tarjeta.py: 69] 
+                Numero de Tarjeta: 5354435634522345
+                ID Cliente: 233
+                CVV: 332
+                Fecha de Vencimiento: 24/01/24
+                Banco: Santander
+                
+01:17:56 PM: DEBUG [Tarjeta.py: 73] 
+                Numero de Tarjeta: 5354435634522345
+                ID Cliente: 233
+                CVV: 332
+                Fecha de Vencimiento: 24/01/24
+                Banco: Santander
+                
+01:18:19 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:18:20 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001806065B950>
+01:18:20 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000180624FA460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:18:20 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:18:20 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: inserción o actualización en la tabla «tarjeta» viola la llave foránea «fk_cliente_tarjeta»
+DETAIL:  La llave (id_cliente)=(2323213) no está presente en la tabla «cliente».
+ <class 'psycopg2.errors.ForeignKeyViolation'> <traceback object at 0x00000180625928C0>
+01:18:20 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000180624FA460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:20:42 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:20:42 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000002DAC0E51340>
+01:20:42 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002DAC2632460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:20:42 PM: DEBUG [TarjetaDAO.py: 29] Registro insertado en la base de datos: 
+                Numero de Tarjeta: 5647637483748162
+                ID Cliente: 1
+                CVV: 344
+                Fecha de Vencimiento: 2025-12-23
+                Banco: Banamex
+                
+01:20:42 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:20:42 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:20:42 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002DAC2632460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:20:42 PM: DEBUG [TarjetaDAO.py: 54] Registro insertado en la base de datos: 1
+01:20:42 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:20:42 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002DAC2632460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:20:42 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:20:42 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: el operador no existe: character varying = bigint
+LINE 1: ...'2025-12-23', banco = 'Banamex' WHERE num_tarjeta = 56476374...
+                                                             ^
+HINT:  Ningún operador coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+ <class 'psycopg2.errors.UndefinedFunction'> <traceback object at 0x000002DAC26C4940>
+01:20:42 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002DAC2632460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:21:43 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:21:43 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000026C57EF1340>
+01:21:43 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000026C598F2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:21:43 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:21:43 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «tarjeta_pkey»
+DETAIL:  Ya existe la llave (num_tarjeta)=(5647637483748162).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x0000026C59984A80>
+01:21:43 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000026C598F2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:22:13 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:22:13 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001E63AD8AB40>
+01:22:13 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001E63AD32460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:22:13 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:22:13 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: inserción o actualización en la tabla «tarjeta» viola la llave foránea «fk_cliente_tarjeta»
+DETAIL:  La llave (id_cliente)=(2323213) no está presente en la tabla «cliente».
+ <class 'psycopg2.errors.ForeignKeyViolation'> <traceback object at 0x000001E63ADC1000>
+01:22:13 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001E63AD32460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:30:45 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:30:45 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000002E10B80A420>
+01:30:45 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002E10B7B2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:30:45 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:30:45 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El cliente con ID Cliente 2323213 no existe en la tabla Cliente. <class 'ValueError'> <traceback object at 0x000002E10B841080>
+01:30:45 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002E10B7B2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:31:16 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:31:16 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000222FE6DB950>
+01:31:16 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000222FF1E2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:31:16 PM: DEBUG [TarjetaDAO.py: 44] Registro insertado en la base de datos: 
+                Numero de Tarjeta: 5647637483748192
+                ID Cliente: 2
+                CVV: 344
+                Fecha de Vencimiento: 23/12/25
+                Banco: Banamex
+                
+01:31:16 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:31:16 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:31:16 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000222FF1E2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:31:16 PM: DEBUG [TarjetaDAO.py: 70] Registro insertado en la base de datos: 1
+01:31:16 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:31:16 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000222FF1E2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:31:16 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:31:16 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: la columna «fecha_vencimiento» es de tipo date pero la expresión es de tipo integer
+LINE 1: ... = 5647637483748192, cvv = 2, fecha_vencimiento = 344, banco...
+                                                             ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+ <class 'psycopg2.errors.DatatypeMismatch'> <traceback object at 0x00000222FF271100>
+01:31:16 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000222FF1E2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:31:40 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:31:40 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000261FAB7B950>
+01:31:40 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000261FCA12460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:31:40 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:31:40 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «tarjeta_pkey»
+DETAIL:  Ya existe la llave (num_tarjeta)=(5647637483748192).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x00000261FCAA1040>
+01:31:40 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000261FCA12460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:32:02 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:32:02 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000029BD568B950>
+01:32:02 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000029BD7562460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:32:02 PM: DEBUG [TarjetaDAO.py: 44] Registro insertado en la base de datos: 
+                Numero de Tarjeta: 5647635483748192
+                ID Cliente: 2
+                CVV: 344
+                Fecha de Vencimiento: 231225
+                Banco: Banamex
+                
+01:32:02 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:32:02 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:32:02 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000029BD7562460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:32:02 PM: DEBUG [TarjetaDAO.py: 70] Registro insertado en la base de datos: 1
+01:32:02 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:32:02 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000029BD7562460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:32:02 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:32:02 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: la columna «fecha_vencimiento» es de tipo date pero la expresión es de tipo integer
+LINE 1: ... = 5647635483748192, cvv = 2, fecha_vencimiento = 344, banco...
+                                                             ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+ <class 'psycopg2.errors.DatatypeMismatch'> <traceback object at 0x0000029BD75F0F40>
+01:32:02 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000029BD7562460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:32:47 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:32:47 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001E4EB1DB950>
+01:32:47 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001E4ED0B2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:32:47 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:32:47 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «tarjeta_pkey»
+DETAIL:  Ya existe la llave (num_tarjeta)=(5647635483748192).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x000001E4ED141040>
+01:32:47 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001E4ED0B2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:32:58 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:32:58 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001F49E3CB950>
+01:32:58 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001F4A02D2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:32:58 PM: DEBUG [TarjetaDAO.py: 44] Registro insertado en la base de datos: 
+                Numero de Tarjeta: 5647635483776192
+                ID Cliente: 2
+                CVV: 344
+                Fecha de Vencimiento: 2025-12-31
+                Banco: Banamex
+                
+01:32:58 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:32:58 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+01:32:58 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001F4A02D2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:32:58 PM: DEBUG [TarjetaDAO.py: 70] Registro insertado en la base de datos: 1
+01:32:58 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:32:58 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001F4A02D2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:32:58 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:32:58 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: la columna «fecha_vencimiento» es de tipo date pero la expresión es de tipo integer
+LINE 1: ... = 5647635483776192, cvv = 2, fecha_vencimiento = 344, banco...
+                                                             ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+ <class 'psycopg2.errors.DatatypeMismatch'> <traceback object at 0x000001F4A0361100>
+01:32:58 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001F4A02D2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:34:36 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:34:36 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000191321AB950>
+01:34:36 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000019134092460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:34:36 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:34:36 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «tarjeta_pkey»
+DETAIL:  Ya existe la llave (num_tarjeta)=(5647635483776192).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x0000019134121040>
+01:34:36 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000019134092460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:35:46 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+01:35:46 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000131DA33B950>
+01:35:46 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000131DC1D2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+01:35:46 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+01:35:46 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El cliente con ID Cliente 8 no existe en la tabla Cliente. <class 'ValueError'> <traceback object at 0x00000131DC260F80>
+01:35:46 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000131DC1D2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:01:21 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:01:21 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001BACB7CA660>
+02:01:21 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001BACB772460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:01:21 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:01:21 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El cliente con ID Cliente 8 no existe en la tabla Cliente. <class 'ValueError'> <traceback object at 0x000001BACB801280>
+02:01:21 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001BACB772460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:01:32 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:01:32 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001D62754A660>
+02:01:32 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001D6274F2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:01:32 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:01:32 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: el operador no existe: character varying = bigint
+LINE 1: SELECT id_cliente FROM cliente WHERE num_tarjeta = 111122223...
+                                                         ^
+HINT:  Ningún operador coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+ <class 'psycopg2.errors.UndefinedFunction'> <traceback object at 0x000001D627581240>
+02:01:32 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001D6274F2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:02:00 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:02:00 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000280CB1A3950>
+02:02:00 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000280CCA52460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:02:00 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:02:00 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: el operador no existe: character varying = bigint
+LINE 1: SELECT id_cliente FROM cliente WHERE num_tarjeta = 543527364...
+                                                         ^
+HINT:  Ningún operador coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+ <class 'psycopg2.errors.UndefinedFunction'> <traceback object at 0x00000280CCAE5040>
+02:02:00 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000280CCA52460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:04:25 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:04:25 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000022C8FE8A7E0>
+02:04:25 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000022C91D02460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:04:25 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:04:25 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: el operador no existe: character varying = bigint
+LINE 1: SELECT id_cliente FROM cliente WHERE num_tarjeta = 543527364...
+                                                         ^
+HINT:  Ningún operador coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+ <class 'psycopg2.errors.UndefinedFunction'> <traceback object at 0x0000022C91D90D40>
+02:04:25 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000022C91D02460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:05:01 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:05:01 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001A21E31A7E0>
+02:05:01 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001A2201D2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:05:01 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:05:01 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: La tarjeta número 543527364591827 no existe en la tabla Cliente. <class 'ValueError'> <traceback object at 0x000001A220260FC0>
+02:05:01 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001A2201D2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:05:45 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:05:45 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001EC45B35370>
+02:05:45 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001EC45AC2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:05:45 PM: DEBUG [TarjetaDAO.py: 36] Registro insertado en la base de datos: 
+                Numero de Tarjeta: 543527364591827
+                ID Cliente: 2
+                CVV: 100
+                Fecha de Vencimiento: 2029-12-31
+                Banco: BBVA
+                
+02:05:45 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:05:45 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+02:05:45 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001EC45AC2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:05:45 PM: DEBUG [TarjetaDAO.py: 69] Registro insertado en la base de datos: 1
+02:05:45 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:05:45 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001EC45AC2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:05:45 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:05:45 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: el operador no existe: character varying = bigint
+LINE 1: SELECT id_cliente FROM cliente where num_tarjeta = 543527364...
+                                                         ^
+HINT:  Ningún operador coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+ <class 'psycopg2.errors.UndefinedFunction'> <traceback object at 0x000001EC45B51480>
+02:05:45 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001EC45AC2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:06:53 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:06:53 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000002AE25C449E0>
+02:06:53 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002AE25C52460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:06:53 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:06:53 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «tarjeta_pkey»
+DETAIL:  Ya existe la llave (num_tarjeta)=(543527364591827).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x000002AE25CE0E00>
+02:06:53 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002AE25C52460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:07:44 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:07:44 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001AB0E2E5370>
+02:07:44 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001AB0E272460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:07:44 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:07:44 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «tarjeta_pkey»
+DETAIL:  Ya existe la llave (num_tarjeta)=(543527364591827).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x000001AB0E301040>
+02:07:44 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001AB0E272460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:07:58 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:07:58 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001CC97F05370>
+02:07:58 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001CC97E92460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:07:58 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:07:58 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «tarjeta_pkey»
+DETAIL:  Ya existe la llave (num_tarjeta)=(543527364591827).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x000001CC97F21040>
+02:07:58 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001CC97E92460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:09:23 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:09:23 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001F843C52B40>
+02:09:23 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001F845482460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:09:23 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:09:23 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: el operador no existe: character varying = bigint
+LINE 1: SELECT id_cliente FROM cliente WHERE num_tarjeta = 543527364...
+                                                         ^
+HINT:  Ningún operador coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+ <class 'psycopg2.errors.UndefinedFunction'> <traceback object at 0x000001F845511140>
+02:09:23 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001F845482460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:13:54 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:13:54 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000002BADBA92B40>
+02:13:54 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002BADD2D2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:13:54 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:13:54 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El cliente con ID Cliente 543527364591827 no existe en la tabla Cliente. <class 'ValueError'> <traceback object at 0x000002BADD361200>
+02:13:54 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002BADD2D2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:15:14 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:15:14 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000024789192B40>
+02:15:14 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002478A9C2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:15:14 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:15:14 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «tarjeta_pkey»
+DETAIL:  Ya existe la llave (num_tarjeta)=(1234567812345678).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x000002478AA51140>
+02:15:14 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002478A9C2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:18:03 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:18:03 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000250640BDA30>
+02:18:03 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000025065892460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:18:03 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:18:03 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «tarjeta_pkey»
+DETAIL:  Ya existe la llave (num_tarjeta)=(1234567812345678).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x0000025065925300>
+02:18:03 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000025065892460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:21:30 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:21:30 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000019125CDDA30>
+02:21:30 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000019127502460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:21:30 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:21:30 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «tarjeta_pkey»
+DETAIL:  Ya existe la llave (num_tarjeta)=(1234567812345678).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x0000019127595300>
+02:21:30 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000019127502460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:38:54 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:38:54 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000293BF43DA30>
+02:38:54 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000293C0C62460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:38:54 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:38:54 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «tarjeta_pkey»
+DETAIL:  Ya existe la llave (num_tarjeta)=(1234567812345678).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x00000293C0CF5300>
+02:38:54 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000293C0C62460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:40:21 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:40:22 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000148AF5D2B40>
+02:40:22 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000148B0E52460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:40:22 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:40:22 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: La tarjeta número 1234567812345678 ya existe en la base de datos. <class 'ValueError'> <traceback object at 0x00000148B0EE1400>
+02:40:22 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000148B0E52460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:40:47 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:40:47 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000166598F2B40>
+02:40:47 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001665B122460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:40:47 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:40:47 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El cliente con ID Cliente 7 no existe en la tabla Cliente. <class 'ValueError'> <traceback object at 0x000001665B1B14C0>
+02:40:47 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001665B122460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:40:54 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:40:54 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001CCD3262B40>
+02:40:54 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001CCD4AE2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:40:54 PM: DEBUG [TarjetaDAO.py: 44] Registro insertado en la base de datos: 
+                Numero de Tarjeta: 1234567812345679
+                ID Cliente: 6
+                CVV: 100
+                Fecha de Vencimiento: 2029-12-31
+                Banco: BBVA
+                
+02:40:54 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:40:54 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+02:40:54 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001CCD4AE2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:40:54 PM: DEBUG [TarjetaDAO.py: 78] Registro insertado en la base de datos: 1
+02:40:54 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:40:54 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001CCD4AE2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:40:54 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:40:54 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: La tarjeta número 1234567812345679 no existe en la tabla Cliente. <class 'ValueError'> <traceback object at 0x000001CCD4B71600>
+02:40:54 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001CCD4AE2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:42:16 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:42:16 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000173EB61AC60>
+02:42:16 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000173EB5C2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:42:16 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:42:16 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: 'int' object does not support indexing <class 'TypeError'> <traceback object at 0x00000173EB650BC0>
+02:42:16 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000173EB5C2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:43:12 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:43:12 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001FF30BDA5A0>
+02:43:12 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001FF30B82460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:43:12 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:43:12 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: not all arguments converted during string formatting <class 'TypeError'> <traceback object at 0x000001FF30C10D00>
+02:43:12 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001FF30B82460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:44:40 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:44:40 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000275E5352B40>
+02:44:40 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000275E6B92460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:44:40 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:44:40 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: La tarjeta número 1234567812345679 ya existe en la base de datos. <class 'ValueError'> <traceback object at 0x00000275E6C21400>
+02:44:40 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000275E6B92460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:46:01 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:46:01 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000002A832B32B40>
+02:46:01 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000002A834362460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:46:01 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:46:01 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: La tarjeta número 1234567812345679 no existe en la tabla Cliente. <class 'ValueError'> <traceback object at 0x000002A8343F1000>
+02:46:01 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000002A834362460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:47:01 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:47:01 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001565602A690>
+02:47:01 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000015655FD2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:47:01 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:47:01 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El cliente con ID Cliente 7 no existe en la tabla Cliente. <class 'ValueError'> <traceback object at 0x00000156560612C0>
+02:47:01 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000015655FD2460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:49:32 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:49:32 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000167A20ED040>
+02:49:32 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000167A20EA460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:49:32 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:49:32 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: la sintaxis de entrada no es válida para tipo bigint: «1010 1010 1010 1100»
+LINE 1: ... 'Taylor', 12, 'lats123@mail.com', '555 515 555', '1010 1010...
+                                                             ^
+ <class 'psycopg2.errors.InvalidTextRepresentation'> <traceback object at 0x00000167A218D6C0>
+02:49:32 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000167A20EA460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:50:18 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:50:18 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001E72C07D040>
+02:50:18 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001E72C07A460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:50:18 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:50:18 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: la sintaxis de entrada no es válida para tipo bigint: «1010 1010 1010 1100»
+LINE 1: ... 'Taylor', 12, 'lats123@mail.com', '555 515 555', '1010 1010...
+                                                             ^
+ <class 'psycopg2.errors.InvalidTextRepresentation'> <traceback object at 0x000001E72C11D600>
+02:50:18 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001E72C07A460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:51:05 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:51:05 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000002680441AF30>
+02:51:05 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000026805C9E460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:51:05 PM: DEBUG [ClienteDAO.py: 28] Registro insertado en la base de datos: 
+                ID Cliente: None
+                Usuario: lauren1
+                Nombre(s) = Lauren
+                Apellido Paterno: Taylor
+                Apellido Materno: Smith
+                Dirección asociada: 12
+                Correo: lats123@mail.com
+                Teléfono: 555 515 555
+                Tarjeta: 4444555522228888
+                
+02:51:05 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:51:05 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+02:51:05 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000026805C9E460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:51:05 PM: DEBUG [ClienteDAO.py: 51] Registro insertado en la base de datos: 1
+02:51:05 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:51:05 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000026805C9E460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:51:05 PM: DEBUG [ClienteDAO.py: 36] Registro actualizado: 
+                ID Cliente: 1
+                Usuario: tukyol
+                Nombre(s) = Javier
+                Apellido Paterno: Juárez
+                Apellido Materno: Morales
+                Dirección asociada: 3
+                Correo: tukyol@mail.com
+                Teléfono: 555 555 555
+                Tarjeta: 9999777788885555
+                
+02:51:05 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:51:05 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+02:51:05 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000026805C9E460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:51:05 PM: DEBUG [ClienteDAO.py: 56] Registros actualizados: 1
+02:51:05 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+02:51:05 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000026805C9E460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:51:05 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+02:51:05 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: update o delete en «cliente» viola la llave foránea «fk_cliente_favoritos» en la tabla «favoritos»
+DETAIL:  La llave (id_cliente)=(1) todavía es referida desde la tabla «favoritos».
+ <class 'psycopg2.errors.ForeignKeyViolation'> <traceback object at 0x0000026805D3DA80>
+02:51:05 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000026805C9E460; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+02:58:35 PM: DEBUG [proveedor.py: 43] 
+                ID Proveedor: 2
+                Nombre: Sandra
+                Teléfono de contacto: 1345566
+                
+02:58:35 PM: DEBUG [proveedor.py: 47] 
+                ID Proveedor: 2
+                Nombre: Sandra
+                Teléfono de contacto: 1345566
+                
+02:58:35 PM: DEBUG [proveedor.py: 51] 
+                ID Proveedor: 2
+                Nombre: None
+                Teléfono de contacto: None
+                
+03:05:47 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:05:47 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000019290668590>
+03:05:47 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x00000192921E2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:05:47 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:05:47 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «proveedor_pkey»
+DETAIL:  Ya existe la llave (id_proveedor)=(4).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x0000019292272400>
+03:05:47 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x00000192921E2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:05:56 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:05:56 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000024C8AF58590>
+03:05:56 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000024C8CA92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:05:56 PM: DEBUG [ProveedorDAO.py: 29] Registro insertado en la base de datos: 
+                ID Proveedor: 7
+                Nombre: Sanchez
+                Teléfono de contacto: 234566
+                
+03:05:56 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:05:56 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+03:05:56 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000024C8CA92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:05:56 PM: DEBUG [ProveedorDAO.py: 54] Registro insertado en la base de datos: 1
+03:05:56 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:05:56 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000024C8CA92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:05:56 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:05:56 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: tuple index out of range <class 'IndexError'> <traceback object at 0x0000024C8CB28A40>
+03:05:56 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000024C8CA92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:07:23 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:07:23 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000021478258590>
+03:07:23 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000021479D92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:07:23 PM: DEBUG [ProveedorDAO.py: 29] Registro insertado en la base de datos: 
+                ID Proveedor: 5
+                Nombre: Proveedor5
+                Teléfono de contacto: 5559012324
+                
+03:07:23 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:07:23 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+03:07:23 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000021479D92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:07:23 PM: DEBUG [ProveedorDAO.py: 54] Registro insertado en la base de datos: 1
+03:07:23 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:07:23 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000021479D92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:07:23 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:07:23 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: tuple index out of range <class 'IndexError'> <traceback object at 0x0000021479E28B40>
+03:07:23 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000021479D92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:11:48 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:11:48 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001E43BF363F0>
+03:11:48 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001E43BEE2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:11:48 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:11:48 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «proveedor_pkey»
+DETAIL:  Ya existe la llave (id_proveedor)=(5).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x000001E43BF74C00>
+03:11:48 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001E43BEE2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:12:06 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:12:06 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001F39A7DB950>
+03:12:06 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001F39C672350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:12:07 PM: DEBUG [ProveedorDAO.py: 29] Registro insertado en la base de datos: 
+                ID Proveedor: 6
+                Nombre: Proveedor6
+                Teléfono de contacto: 5559016324
+                
+03:12:07 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:12:07 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+03:12:07 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001F39C672350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:12:07 PM: DEBUG [ProveedorDAO.py: 54] Registro insertado en la base de datos: 1
+03:12:07 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:12:07 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001F39C672350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:12:07 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:12:07 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: error de sintaxis en o cerca de «'Juan Sánchez'»
+LINE 1: UPDATE proveedor SET nombre = 1, tel_contacto 'Juan Sánchez'...
+                                                      ^
+ <class 'psycopg2.errors.SyntaxError'> <traceback object at 0x000001F39C704AC0>
+03:12:07 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001F39C672350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:29 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:13:29 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001C64A1AAB40>
+03:13:29 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001C64B972350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:29 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:13:29 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «proveedor_pkey»
+DETAIL:  Ya existe la llave (id_proveedor)=(6).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x000001C64BA04C00>
+03:13:29 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001C64B972350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:47 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:13:47 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000027C3D9BB950>
+03:13:47 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000027C3F8D2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:47 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:13:47 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «proveedor_pkey»
+DETAIL:  Ya existe la llave (id_proveedor)=(7).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x0000027C3F964C00>
+03:13:47 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000027C3F8D2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:14:25 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:14:25 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x00000156212D60F0>
+03:14:25 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000015621282350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:14:25 PM: DEBUG [ProveedorDAO.py: 29] Registro insertado en la base de datos: 
+                ID Proveedor: 10
+                Nombre: Proveedor10
+                Teléfono de contacto: 5259016435
+                
+03:14:25 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:14:25 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+03:14:25 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000015621282350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:14:25 PM: DEBUG [ProveedorDAO.py: 54] Registro insertado en la base de datos: 1
+03:14:25 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:14:25 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000015621282350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:14:25 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:14:25 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: error de sintaxis en o cerca de «5544663344»
+LINE 1: ...oveedor SET nombre = 'Juan Sánchez', tel_contacto 5544663344...
+                                                             ^
+ <class 'psycopg2.errors.SyntaxError'> <traceback object at 0x0000015621314D80>
+03:14:25 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000015621282350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:20:16 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:20:16 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001FD3839B950>
+03:20:16 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001FD3A232350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:20:16 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:20:16 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «proveedor_pkey»
+DETAIL:  Ya existe la llave (id_proveedor)=(10).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x000001FD3A2C4C80>
+03:20:16 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001FD3A232350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:50:28 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:50:28 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001E71571B950>
+03:50:28 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001E7175B2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:50:28 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:50:28 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: llave duplicada viola restricción de unicidad «proveedor_pkey»
+DETAIL:  Ya existe la llave (id_proveedor)=(10).
+ <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x000001E717644CC0>
+03:50:28 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001E7175B2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>

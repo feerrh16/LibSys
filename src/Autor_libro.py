@@ -1,14 +1,14 @@
 from logger_base import *
 
-class Autor_libro:
-    def __init__(self, id_autor = None, isbn = None):
+class Autor_Libro:
+    def __init__(self, id_autor = None, ISBN = None):
         self._id_autor = id_autor
-        self._isbn = isbn
+        self._ISBN = ISBN
         
     def __str__(self):
         return f'''
                 ID Autor: {self._id_autor}
-                ISBN: = {self._isbn}
+                ISBN: {self._ISBN}
                 '''
                 
     @property
@@ -20,21 +20,21 @@ class Autor_libro:
         self._id_autor = id_autor
         
     @property
-    def isbn(self):
-        return self._isbn
+    def ISBN(self):
+        return self._ISBN
 
-    @isbn.setter
-    def isbn(self, isbn):
-        self._isbn = isbn
+    @ISBN.setter
+    def ISBN(self, ISBN):
+        self._ISBN = ISBN
 
 if __name__ == '__main__':
-    autor_lib1 = Autor_libro(1,'9796078828326')
-    log.debug(autor_lib1)
+    autor_libro1 = Autor_Libro(1,'9796078828326')
+    log.debug(autor_libro1)
     
     # Simular un INSERT INTO
-    autor_lib1 = Autor_libro(id_autor = 2, isbn= '9796078828327')
-    log.debug(autor_lib1)
+    autor_libro1 = Autor_Libro(id_autor = 2, ISBN= '9796078828327')
+    log.debug(autor_libro1)
     
     # Simular un DELETE
-    autor_lib1 = Autor_libro(id_autor=1)
-    log.debug(autor_lib1)
+    autor_libro1 = Autor_Libro(id_autor=1)
+    log.debug(autor_libro1)

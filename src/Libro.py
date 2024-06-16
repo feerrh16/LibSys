@@ -92,16 +92,16 @@ class Libro:
         self._disponibilidad = disponibilidad
 
 if __name__ == '__main__':
-    libro1 = Libro('978-0-306-40615-7', '10', 'PHP 5', 'Programación', 2023, 'Planeta', 399.00, 1, 10)
+    libro1 = Libro('9780306406157', '10', 'PHP 5', 'Programación', 2023, 'Planeta', 399.00, 1, 10)
     log.debug(libro1)
 
     # Simular un INSERT INTO
-    libro1 = Libro(ISBN = '978-0-306-40615-8', id_autor = '12', titulo = 'Análisis Vectorial', 
+    libro1 = Libro(ISBN = '9780306406158', id_autor = '12', titulo = 'Análisis Vectorial', 
                    genero = 'Matemáticas', anio = '1999', editorial = 'Cambridge', precio = 599.00, 
                    cantidad = 2, disponibilidad = 14)
     log.debug(libro1)
 
     #Simular un DELETE
-    libro1 = Libro(ISBN = '978-0-306-40615-7')
+    libro1 = Libro(ISBN = '9780306406157')
     log.debug(libro1)
     

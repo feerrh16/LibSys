@@ -1,16 +1,14 @@
 from logger_base import *
-from Direccion import *
+from Proveedor import *
 from Conexion import *
 from cursor_del_pool import *
 
 
-class DireccionDAO:
-    _SELECCIONAR = 'SELECT * FROM proveedor ORDER BY id_Proveedor'
-    _INSERTAR = 'INSERT INTO proveedor(id_Proveedor, Nombre, Tel_Contacto)' \
-                ' VALUES(%s, %s, %s)'
-    _ACTUALIZAR = 'UPDATE proveedor SET id_proveedor = %s, Nombre = %s, Tel_Contacto %s' \
-                  ' WHERE id_Proveedor = %s'
-    _BORRAR = 'DELETE FROM proveedor WHERE id_Proveedor = %s'
+class ProveedorDAO:
+    _SELECCIONAR = 'SELECT * FROM proveedor ORDER BY id_proveedor'
+    _INSERTAR = 'INSERT INTO proveedor(id_proveedor, nombre, tel_contacto) VALUES(%s, %s, %s)'
+    _ACTUALIZAR = 'UPDATE proveedor SET nombre = %s, tel_contacto %s WHERE id_proveedor = %s'
+    _BORRAR = 'DELETE FROM proveedor WHERE id_proveedor = %s'
 
     @classmethod
     def seleccionar(cls):
@@ -23,18 +21,26 @@ class DireccionDAO:
                 proveedores.append(proveedor)
             return proveedores
 
-    @classmethod
-    def insertar(cls, proveedor):
+    def insertar(self, proveedor):
         with CursorDelPool() as cursor:
-            valores = (proveedor.id_Proveedor, proveedor.Nombre, proveedor.Tel_Contacto)
-            cursor.execute(cls._INSERTAR, valores)
+            cursor.execute('SELECT * FROM proveedor WHERE id_proveedor = %s', (proveedor.id_proveedor,))
+            registro_existente = cursor.fetchone()
+    
+            if registro_existente:
+                # Handle existing record case
+                log.error(f'Ya existe un registro con id_proveedor: {proveedor.id_proveedor}')
+                return None
+    
+            valores = (proveedor.id_proveedor, proveedor.nombre, proveedor.tel_contacto)
+            cursor.execute(self._INSERTAR, valores)
             log.debug(f'Registro insertado en la base de datos: {proveedor}')
             return cursor.rowcount
+
 
     @classmethod
     def actualizar(cls, proveedor):
         with CursorDelPool() as cursor:
-            valores = (proveedor.id_Proveedor, proveedor.Nombre, proveedor.Tel_Contacto)
+            valores = (proveedor.nombre, proveedor.tel_contacto, proveedor.id_proveedor)
             cursor.execute(cls._ACTUALIZAR, valores)
             log.debug(f'Registro actualizado: {proveedor}')
             return cursor.rowcount
@@ -42,7 +48,7 @@ class DireccionDAO:
     @classmethod
     def borrar(cls, proveedor):
         with CursorDelPool() as cursor:
-            valores = (proveedor.id_Proveedor, proveedor.Nombre, proveedor.Tel_Contacto)
+            valores = (proveedor.id_proveedor, proveedor.nombre, proveedor.tel_contacto)
             cursor.execute(cls._BORRAR, valores)
             log.debug(f'Registro eliminado: {proveedor}')
             return cursor.rowcount
@@ -50,22 +56,21 @@ class DireccionDAO:
 
 if __name__ == '__main__':
     # Insertar un registro
-
-    proveedor1 = proveedor(id_Proveedor=123212,Nombre='Sanchez',Tel_Contacto=234566)
-    proveedor_insertada = proveedorDAO.insertar(proveedor1)
+    proveedor1 = Proveedor(id_proveedor=10, nombre='Proveedor10', tel_contacto=5259016435)
+    proveedor_insertada = ProveedorDAO.insertar(proveedor1)
     log.debug(f'Registro insertado en la base de datos: {proveedor_insertada}')
 
     # Actualizar un registro
-    proveedor1 = proveedor(id_Proveedor=123212,Nombre='Sanchez',Tel_Contacto=234566)
-    proveedor_actualizada = proveedorDAO.actualizar(proveedor1)
-    log.debug(f'Registros actualizados: {proveedor_actualizada}')
+    proveedor1 = Proveedor(1, 'Juan Sánchez', 5544663344)
+    proveedor_actualizado = ProveedorDAO.actualizar(proveedor1)
+    log.debug(f'Registros actualizados: {proveedor_actualizado}')
 
     # Eliminar un registro
-    proveedor1 = proveedor(id_Proveedor=123212,Nombre='Sanchez',Tel_Contacto=234566)
-    proveedor_eliminada = proveedorDAO.borrar(proveedor1)
-    log.debug(f'Registros eliminados: {proveedor_eliminada}')
+    proveedor1 = Proveedor(id_proveedor = 5)
+    proveedor_eliminado = ProveedorDAO.borrar(proveedor1)
+    log.debug(f'Registros eliminados: {proveedor_eliminado}')
 
     # Seleccionar objetos
-    proveedores = proveedorDAO.seleccionar()
-    for proveedor in proveedores:
-        log.debug(proveedor)
+    proveedores = ProveedorDAO.seleccionar()
+    for Proveedor in proveedores:
+        log.debug(Proveedor)

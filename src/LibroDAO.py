@@ -46,18 +46,18 @@ class LibroDAO:
 
 if __name__ == '__main__':
     # Insertar un registro
-    libro1 = Libro(ISBN = '978-0-306-40615-7', id_autor = 2, titulo = 'El gran diseño', genero = 'Ciencia', anio = 2013, editorial = 'Cambridge', precio = 699.00, cantidad = 1, disponibilidad = 23)
+    libro1 = Libro(ISBN = '9780306406157', id_autor = 2, titulo = 'El gran diseño', genero = 'Ciencia', anio = 2013, editorial = 'Cambridge', precio = 699.00, cantidad = 1, disponibilidad = 23)
     libros_insertados = LibroDAO.insertar(libro1)
     log.debug(f'Registro insertado en la base de datos: {libros_insertados}')
 
     # Actualizar un registro
-    libro1 = Libro('978-0-306-40615-8', 2, 'El Gran Diseño', 'Académico', 2013, 'Oxford', 799.00, 1, 20)
+    libro1 = Libro('9780306406158', 2, 'El Gran Diseño', 'Académico', 2013, 'Oxford', 799.00, 1, 20)
     libros_actualizados = LibroDAO.actualizar(libro1)
     log.debug(f'Registros actualizados: {libros_actualizados}')
     
 
     # Eliminar un registro
-    libro1 = Libro(ISBN = '978-0-306-40615-7')
+    libro1 = Libro(ISBN = '9780306406157')
     libros_eliminados = LibroDAO.borrar(libro1)
     log.debug(f'Registros eliminados: {libros_eliminados}')
     

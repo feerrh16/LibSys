@@ -1,51 +1,104 @@
-/**{
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
     box-sizing: border-box;
-}*/
+    text-decoration: none;
+    list-style: none;
+}
 
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
-/*Header*/
-header {
+header{
+    display:flex;
+    flex-direction: column;
     background-color: #f3e5ab;
     background-size: cover;
-
 }
 
-.nav-pag {
+.navegacion{
     display: flex;
-    min-height: 70px;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+}
+.navegacion .navbar ul li{
+    position: relative;
+    float: left;
 }
 
-.nav-pag a {
+.navegacion .navbar ul li a{
+    padding: 20px;
+    color: #000;
+    display: block;
+}
+
+/*Carrito*/
+
+.submenu{
+    position: relative;
+    text-align: center;
+}
+
+.submenu a{
+    border: 1px solid;
+    padding: 5px;
+    background-color: #d3c692;
     text-decoration: none;
-    color: black;
+    color: #000;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+    background-color:#4E4B5076;
+    padding: 20PX;
+    min-width: 400px;
+}
+table{
+    width: 100%;
+}
+
+th, td{
+    color: #ffffff;
+    padding: 5px;
+}
+
+.borrar{
+    background-color:#d3c692;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+/*Barra de Navegacion*/
+.busqueda {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     padding: 10px;
 }
 
-.nav-pag h2{
-    font-size: 30px;
-}
+.busqueda input[type="text"] {
 
-.buscador {
-    display: flex;
-}
-
-.buscador input[type="text"] {
-    flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px 0 0 4px;
 }
 
-.buscador button {
+.busquead button {
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-left: none;
@@ -143,7 +196,7 @@ header {
 
 .cartas {
     position: relative;
-    width: 300px;
+    width: 250px;
     height: 350px;
     margin: 10px;
 }
@@ -191,12 +244,13 @@ header {
 }
 
 .cartas .posterior .link {
-    border-top: solid 1px;
+
+    width: 50%;
     height: 75px;
     line-height: 20px;
 }
 
-.cartas .posterior .link a {
+.cartas .posterior a {
     color: #000;
 }
 
@@ -331,18 +385,22 @@ h2{
 
 @media (max-width: 761px) {
     /*Header*/
-    .nav-pag {
-        flex-direction: colum;
+    .navegacion {
+        flex-direction: column;
     }
-    .nav-pag h2{
+    .navegacion h2{
         font-size: 25px;
     }
    
-    .buscador input[type="text"] {
+    .busqueda input[type="text"] {
         flex: 1;
         padding: 5px;
         border: 1px solid #ccc;
         border-radius: 5px 0 0 5px;
+    }
+
+    .links{
+        margin-top: 15px;
     }
     /*Menu - Submenu*/
     .menu{

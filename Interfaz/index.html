@@ -10,19 +10,44 @@
 
 <body>
     <header>
-        <div class="nav-pag">
+        <div class="navegacion">
+            <div class="logo">
+                <h2>Libreria Colibri</h2>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Iniciosesion.html">Iniciar sesion</a></li>
+                    <li><a href="Registro.html">Registrarse</a></li>
+                    <li><a href="Tienda.html">Tienda</a></li>
+                </ul>
+            </nav>
             <div>
-                <h2 class="nom-lib">Libreria Colibri</h2>
+                <ul>
+                    <il class="submenu">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
+                        </div>
+                    </il>
+                </ul>
+                <a href="" class="nav-carr"></a>
             </div>
-            <div class="buscador">
-                <input placeholder="Buscar" type="text">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="links">
-                <a href="InicioSesion.html" class="nav-reg"><i class="fa-solid fa-user"></i></a>
-                <a href="tienda.html" class="nav-tie">Tienda</a>
-                <a href="" class="nav-carr"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
+        </div>
+        <div class="busqueda">
+            <input placeholder="Buscar" type="text">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
     </header>
     <div class="menu">
@@ -147,73 +172,73 @@
             </ul>
         </nav>
     </div>
-
+    <section class="slider">
+        <div class="cartas">
+            <div class="cara frontal">
+                <img src="ImgLib/dune.jpg">
+                <h3>Dune</h3>
+            </div>
+            <div class="cara posterior">
+                <h3>Dune</h3>
+                <p>
+                    Dune relata la historia del planeta desértico Arrakis, única fuente de melange, la especia
+                    necesaria
+                    para el viaje interestelar y que además garantiza longevidad y poderes psíquicos.
+                </p>
+                <span class="precio">200$</span>
+                <div class="link">
+                    <a href="#" class="agreg-carr bt-1">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="cartas">
+            <div class="cara frontal">
+                <img src="ImgLib/LibroCienciaFiccion.jpg">
+                <h3>El marciano</h3>
+            </div>
+            <div class="cara posterior">
+                <h3>El marciano</h3>
+                <p>
+                    La tripulación de la nave en que viajaba se ve obligada a evacuar el planeta a causa de una
+                    tormenta
+                    de polvo, dejando atrás a Mark tras darlo por muerto. Pero el está vivo, y atrapado a millones
+                    de
+                    kilómetros de cualquier ser humano, sin posibilidad de enviar señales a la Tierra.
+                </p>
+                <div class="link">
+                    <a href="#" class="agreg-carr bt-1">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="cartas">
+            <div class="cara frontal">
+                <img src="ImgLib/la biblioteca de la medianoche.jpg">
+                <h3>La biblioteca de la medianoche</h3>
+            </div>
+            <div class="cara posterior">
+                <h3>La biblioteca de la medianoche</h3>
+                <p>
+                    Entre la vida y la muerte hay una biblioteca. Y los estantes de esa biblioteca son infinitos.
+                    Cada
+                    libro da la oportunidad de probar otra vida que podrías haber vivido y de comprobar cómo habrían
+                    cambiado las cosas si hubieras tomado otras decisiones... ¿Habrías hecho algo de manera
+                    diferente si
+                    hubieras tenido la oportunidad?.
+                </p>
+                <div class="link">
+                    <a href="#" class="agreg-carr bt-1">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <main>
-        <section class="slider">
-            <div class="cartas" data-id="1">
-                <div class="cara frontal">
-                    <img src="ImgLib/dune.jpg">
-                    <h3>Dune</h3>
-                </div>
-                <div class="cara posterior">
-                    <h3>Dune</h3>
-                    <p>
-                        Dune relata la historia del planeta desértico Arrakis, única fuente de melange, la especia
-                        necesaria
-                        para el viaje interestelar y que además garantiza longevidad y poderes psíquicos.
-                    </p>
-                    <div class="link">
-                        <a href="#">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="cartas" data-id="2">
-                <div class="cara frontal">
-                    <img src="ImgLib/LibroCienciaFiccion.jpg">
-                    <h3>El marciano</h3>
-                </div>
-                <div class="cara posterior">
-                    <h3>El marciano</h3>
-                    <p>
-                        La tripulación de la nave en que viajaba se ve obligada a evacuar el planeta a causa de una
-                        tormenta
-                        de polvo, dejando atrás a Mark tras darlo por muerto. Pero el está vivo, y atrapado a millones
-                        de
-                        kilómetros de cualquier ser humano, sin posibilidad de enviar señales a la Tierra.
-                    </p>
-                    <div class="link">
-                        <a href="#">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="cartas" data-id="3">
-                <div class="cara frontal">
-                    <img src="ImgLib/la biblioteca de la medianoche.jpg">
-                    <h3>La biblioteca de la medianoche</h3>
-                </div>
-                <div class="cara posterior">
-                    <h3>La biblioteca de la medianoche</h3>
-                    <p>
-                        Entre la vida y la muerte hay una biblioteca. Y los estantes de esa biblioteca son infinitos.
-                        Cada
-                        libro da la oportunidad de probar otra vida que podrías haber vivido y de comprobar cómo habrían
-                        cambiado las cosas si hubieras tomado otras decisiones... ¿Habrías hecho algo de manera
-                        diferente si
-                        hubieras tenido la oportunidad?.
-                    </p>
-                    <div class="link">
-                        <a href="#">Comprar</a>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="productos">
             <h2>Libros</h2>
             <div class="conten-lib" id="lista-lib">
                 <div class="libro">
                     <img src="ImgLib/Juegos Del Hambre.jpg">
                     <div class="text-lib">
-                        <h3>Juegos del hambre</h3>
+                        <h3 class="nombre">Juegos del hambre</h3>
                         <p>kasksadoksadoksadko</p>
                         <p class="precio">200$</p>
                         <a href="#" class="agreg-carr btn-3" data-id="1">Agregar al carrito</a>
@@ -222,7 +247,7 @@
                 <div class="libro">
                     <img src="ImgLib/Juegos Del Hambre.jpg">
                     <div class="text-lib">
-                        <h3>Juegos del hambre</h3>
+                        <h3 class="nombre">Juegos del hambre</h3>
                         <p>kasksadoksadoksadko</p>
                         <p class="precio">200$</p>
                         <a href="#" class="agreg-carr btn-3" data-id="2">Agregar al carrito</a>
@@ -231,7 +256,7 @@
                 <div class="libro">
                     <img src="ImgLib/Juegos Del Hambre.jpg">
                     <div class="text-lib">
-                        <h3>Juegos del hambre</h3>
+                        <h3 class="nombre">Juegos del hambre</h3>
                         <p>kasksadoksadoksadko</p>
                         <p class="precio">200$</p>
                         <a href="#" class="agreg-carr btn-3" data-id="3">Agregar al carrito</a>
@@ -240,7 +265,7 @@
                 <div class="libro">
                     <img src="ImgLib/Juegos Del Hambre.jpg">
                     <div class="text-lib">
-                        <h3>Juegos del hambre</h3>
+                        <h3 class="nombre">Juegos del hambre</h3>
                         <p>kasksadoksadoksadko</p>
                         <p class="precio">200$</p>
                         <a href="#" class="agreg-carr btn-3" data-id="4">Agregar al carrito</a>
@@ -249,7 +274,7 @@
                 <div class="libro">
                     <img src="ImgLib/Juegos Del Hambre.jpg">
                     <div class="text-lib">
-                        <h3>Juegos del hambre</h3>
+                        <h3 class="nombre">Juegos del hambre</h3>
                         <p>kasksadoksadoksadko</p>
                         <p class="precio">200$</p>
                         <a href="#" class="agreg-carr btn-3" data-id="5">Agregar al carrito</a>
@@ -258,7 +283,7 @@
                 <div class="libro">
                     <img src="ImgLib/Juegos Del Hambre.jpg">
                     <div class="text-lib">
-                        <h3>Juegos del hambre</h3>
+                        <h3 class="nombre">Juegos del hambre</h3>
                         <p>kasksadoksadoksadko</p>
                         <p class="precio">200$</p>
                         <a href="#" class="agreg-carr btn-3" data-id="6">Agregar al carrito</a>
@@ -267,7 +292,7 @@
                 <div class="libro">
                     <img src="ImgLib/Juegos Del Hambre.jpg">
                     <div class="text-lib">
-                        <h3>Juegos del hambre</h3>
+                        <h3 class="nombre">Juegos del hambre</h3>
                         <p>kasksadoksadoksadko</p>
                         <p class="precio">200$</p>
                         <a href="#" class="agreg-carr btn-3" data-id="7">Agregar al carrito</a>
@@ -276,7 +301,7 @@
                 <div class="libro">
                     <img src="ImgLib/Juegos Del Hambre.jpg">
                     <div class="text-lib">
-                        <h3>Juegos del hambre</h3>
+                        <h3 class="nombre">Juegos del hambre</h3>
                         <p>kasksadoksadoksadko</p>
                         <p class="precio">200$</p>
                         <a href="#" class="agreg-carr btn-3" data-id="8">Agregar al carrito</a>
@@ -285,7 +310,7 @@
                 <div class="libro">
                     <img src="ImgLib/Juegos Del Hambre.jpg">
                     <div class="text-lib">
-                        <h3>Juegos del hambre</h3>
+                        <h3 class="nombre">Juegos del hambre</h3>
                         <p>kasksadoksadoksadko</p>
                         <p class="precio">200$</p>
                         <a href="#" class="agreg-carr btn-3" data-id="9">Agregar al carrito</a>
@@ -294,7 +319,7 @@
                 <div class="libro">
                     <img src="ImgLib/Juegos Del Hambre.jpg">
                     <div class="text-lib">
-                        <h3>Juegos del hambre</h3>
+                        <h3 class="nombre">Juegos del hambre</h3>
                         <p>kasksadoksadoksadko</p>
                         <p class="precio">200$</p>
                         <a href="#" class="agreg-carr btn-3" data-id="10">Agregar al carrito</a>
@@ -303,7 +328,7 @@
                 <div class="libro">
                     <img src="ImgLib/Juegos Del Hambre.jpg">
                     <div class="text-lib">
-                        <h3>Juegos del hambre</h3>
+                        <h3 class="nombre">Juegos del hambre</h3>
                         <p>kasksadoksadoksadko</p>
                         <p class="precio">200$</p>
                         <a href="#" class="agreg-carr btn-3" data-id="11">Agregar al carrito</a>
@@ -312,6 +337,7 @@
             </div>
             <div class="btn-2" id="cargar-mas">Cargar Mas</div>
         </section>
+    </main>
     </main>
     <footer class="footer">
         <div class="footer-cont">

@@ -1006,3 +1006,99 @@ DETAIL:  Ya existe la llave (id_proveedor)=(10).
 DETAIL:  Ya existe la llave (id_proveedor)=(10).
  <class 'psycopg2.errors.UniqueViolation'> <traceback object at 0x000001E717644CC0>
 03:50:28 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001E7175B2350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:52 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:13:52 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x0000019DC14931D0>
+03:13:52 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000019DC2C92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:52 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:13:52 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El autor con id_autor 7 no existe en la tabla autor. <class 'ValueError'> <traceback object at 0x0000019DC2D213C0>
+03:13:52 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000019DC2C92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:52 PM: ERROR [Autor_LibroDAO.py: 69] El autor con id_autor 7 no existe en la tabla autor.
+03:13:52 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:13:52 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000019DC2C92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:52 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:13:52 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El libro con ISBN 9796078828326 no existe en la tabla libro. <class 'ValueError'> <traceback object at 0x0000019DC2D21440>
+03:13:52 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000019DC2C92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:52 PM: ERROR [Autor_LibroDAO.py: 77] El libro con ISBN 9796078828326 no existe en la tabla libro.
+03:13:52 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:13:52 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000019DC2C92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:52 PM: DEBUG [Autor_LibroDAO.py: 59] Registro eliminado: 
+                ID Autor: 1
+                ISBN: None
+                
+03:13:52 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:13:52 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+03:13:52 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000019DC2C92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:52 PM: DEBUG [Autor_LibroDAO.py: 82] Registros eliminados: 1
+03:13:52 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:13:52 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x0000019DC2C92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:53 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:13:53 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+03:13:53 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x0000019DC2C92350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:13:53 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 2
+                ISBN: 9780618260300
+                
+03:13:53 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 3
+                ISBN: 9780451524935
+                
+03:13:53 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 4
+                ISBN: 9780062073488
+                
+03:13:53 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 5
+                ISBN: 9780307743657
+                
+03:13:53 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 6
+                ISBN: 9780553293357
+                
+03:22:46 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:22:46 PM: DEBUG [Conexion.py: 29] Creación exitosa del pool de conexiones: <psycopg2.pool.SimpleConnectionPool object at 0x000001ED935431D0>
+03:22:46 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001ED94D12350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:22:46 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:22:46 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El autor con id_autor 7 no existe en la tabla autor. <class 'ValueError'> <traceback object at 0x000001ED94DA13C0>
+03:22:46 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001ED94D12350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:22:46 PM: ERROR [Autor_LibroDAO.py: 69] El autor con id_autor 7 no existe en la tabla autor.
+03:22:46 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:22:46 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001ED94D12350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:22:46 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:22:46 PM: ERROR [cursor_del_pool.py: 20] Ocurrió una excepción, rollback realizado: El libro con ISBN 9796078828326 no existe en la tabla libro. <class 'ValueError'> <traceback object at 0x000001ED94DA1440>
+03:22:46 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001ED94D12350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:22:46 PM: ERROR [Autor_LibroDAO.py: 77] El libro con ISBN 9796078828326 no existe en la tabla libro.
+03:22:46 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:22:46 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001ED94D12350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:22:46 PM: DEBUG [Autor_LibroDAO.py: 59] Registro eliminado: 
+                ID Autor: 1
+                ISBN: None
+                
+03:22:46 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:22:46 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+03:22:46 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001ED94D12350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:22:46 PM: DEBUG [Autor_LibroDAO.py: 82] Registros eliminados: 0
+03:22:46 PM: DEBUG [cursor_del_pool.py: 11] Inicio del método with __enter__
+03:22:46 PM: DEBUG [Conexion.py: 40] Conexion obtenida del pool: <connection object at 0x000001ED94D12350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:22:46 PM: DEBUG [cursor_del_pool.py: 17] Se ejecuta el método __exit__
+03:22:46 PM: DEBUG [cursor_del_pool.py: 23] Commit de la transacción
+03:22:46 PM: DEBUG [Conexion.py: 46] Conexión regresada al pool de conexiones: <connection object at 0x000001ED94D12350; dsn: 'user=postgres password=xxx dbname=LibSys host=127.0.0.1 port=5432', closed: 0>
+03:22:46 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 2
+                ISBN: 9780618260300
+                
+03:22:46 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 3
+                ISBN: 9780451524935
+                
+03:22:46 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 4
+                ISBN: 9780062073488
+                
+03:22:46 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 5
+                ISBN: 9780307743657
+                
+03:22:46 PM: DEBUG [Autor_LibroDAO.py: 87] 
+                ID Autor: 6
+                ISBN: 9780553293357
+                

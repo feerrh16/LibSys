@@ -21,7 +21,7 @@ class ProveedorDAO:
                 proveedores.append(proveedor)
             return proveedores
 
-    def insertar(self, proveedor):
+    def insertar(cls, proveedor):
         with CursorDelPool() as cursor:
             cursor.execute('SELECT * FROM proveedor WHERE id_proveedor = %s', (proveedor.id_proveedor,))
             registro_existente = cursor.fetchone()
@@ -32,7 +32,7 @@ class ProveedorDAO:
                 return None
     
             valores = (proveedor.id_proveedor, proveedor.nombre, proveedor.tel_contacto)
-            cursor.execute(self._INSERTAR, valores)
+            cursor.execute(cls._INSERTAR, valores)
             log.debug(f'Registro insertado en la base de datos: {proveedor}')
             return cursor.rowcount
 

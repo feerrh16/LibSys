@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Autor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="static/Autor.js"></script>
+</head>
+<body>
+    <h1>WebSocket Autor</h1>
+    <input type="text" id="id_autor" placeholder="ID Autor">
+    <input type="text" id="nombre" placeholder="Nombre del Autor">
+    <button onclick="sendAction('get_autor')">Get Autor</button>
+    <button onclick="sendAction('add_autor')">Add Autor</button>
+    <button onclick="sendAction('update_autor')">Update Autor</button>
+    <button onclick="sendAction('delete_autor')">Delete Autor</button>
+    <ul id="messages"></ul>
+</body>
+</html>

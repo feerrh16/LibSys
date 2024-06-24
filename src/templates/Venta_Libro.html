@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Venta Libro</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="static/Venta_Libro.js"></script>
+</head>
+<body>
+    <h1>WebSocket Venta Libro</h1>
+    <input type="text" id="id_venta" placeholder="ID de Venta">
+    <input type="text" id="ISBN" placeholder="ISBN">
+    <input type="text" id="cantidad" placeholder="Cantidad">
+    <button onclick="sendAction('get_venta_libro')">Get Venta Libro</button>
+    <button onclick="sendAction('add_venta_libro')">Add Venta Libro</button>
+    <button onclick="sendAction('update_venta_libro')">Update Venta Libro</button>
+    <button onclick="sendAction('delete_venta_libro')">Delete Venta Libro</button>
+    <ul id="messages"></ul>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Usuario</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="static/Usuario.js"></script>
+</head>
+<body>
+    <h1>WebSocket Usuario</h1>
+    <input type="text" id="nombre_usuario" placeholder="Nombre De Usuario">
+    <input type="text" id="contraseña" placeholder="Contraseña">
+    <input type="text" id="rol" placeholder="Rol">
+    <button onclick="sendAction('get_usuario')">Get Usuario</button>
+    <button onclick="sendAction('add_usuario')">Add Usuario</button>
+    <button onclick="sendAction('update_usuario')">Update Usuario</button>
+    <button onclick="sendAction('delete_usuario')">Delete Usuario</button>
+    <ul id="messages"></ul>
+</body>
+</html>

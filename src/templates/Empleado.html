@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Empleado</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="static/Empleado.js"></script>
+</head>
+<body>
+    <h1>WebSocket Empleado</h1>
+    <input type="text" id="id_empleado" placeholder="ID Empleado">
+    <input type="text" id="nombre_usuario" placeholder="Nombre Usuario">
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="apellido_paterno" placeholder="Apellido Paterno">
+    <input type="text" id="apellido_materno" placeholder="Apellido Materno">
+    <button onclick="sendAction('get_empleado')">Get Empleado</button>
+    <button onclick="sendAction('add_empleado')">Add Empleado</button>
+    <button onclick="sendAction('update_empleado')">Update Empleado</button>
+    <button onclick="sendAction('delete_empleado')">Delete Empleado</button>
+    <ul id="messages"></ul>
+</body>
+</html>

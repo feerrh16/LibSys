@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebSocket Pedido</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="static/Pedido.js"></script>
+</head>
+
+<body>
+    <h1>WebSocket Pedido</h1>
+    <input type="text" id="id_proveedor" placeholder="ID Proveedor">
+    <input type="text" id="ISBN" placeholder="ISBN">
+    <input type="text" id="fecha_pedido" placeholder="Fecha de Pedido">
+    <input type="text" id="fecha_entrega" placeholder="Fecha de Entrega">
+    <input type="text" id="cantidad_pedido" placeholder="Cantidad de Pedido">
+    <input type="text" id="precio_total" placeholder="Precio Total">
+
+    <button onclick="sendAction('get_pedido')">Get Pedido</button>
+    <button onclick="sendAction('add_pedido')">Add Pedido</button>
+    <button onclick="sendAction('update_pedido')">Update Pedido</button>
+    <button onclick="sendAction('delete_pedido')">Delete Pedido</button>
+    <ul id="messages"></ul>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Favoritos</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="static/Favoritos.js"></script>
+</head>
+<body>
+    <h1>WebSocket Favoritos</h1>
+    <input type="text" id="id_cliente" placeholder="ID Cliente">
+    <input type="text" id="ISBN" placeholder="ISBN">
+    <button onclick="sendAction('get_favoritos')">Get Favoritos</button>
+    <button onclick="sendAction('add_favoritos')">Add Favoritos</button>
+    <button onclick="sendAction('update_favoritos')">Update Favoritos</button>
+    <button onclick="sendAction('delete_favoritos')">Delete Favoritos</button>
+    <ul id="messages"></ul>
+</body>
+</html>

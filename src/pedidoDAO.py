@@ -4,7 +4,7 @@ from pedido import *
 from Conexion import *
 from cursor_del_pool import *
 
-class pedidoDAO:
+class PedidoDAO:
     _SELECCIONAR = 'SELECT * FROM pedido ORDER BY id_Proveedor'
     _INSERTAR = 'INSERT INTO pedido(id_Proveedor, ISBN, Fecha_Pedido, Fecha_Entrega, Cantidad_Pedida, Precio_Total) VALUES(%s, %s, %s, %s, %s, %s )'
     _ACTUALIZAR = 'UPDATE pedido SET id_Proveedor = %s, ISBN = %s, Fecha_Pedido = %s, Fecha_Entrega = %s, Cantidad_Pedida = %s, Precio_Total = %s WHERE id_pedido = %s'
@@ -48,21 +48,21 @@ class pedidoDAO:
 if __name__ == '__main__':
     # Insertar un registro
     pedido1 = pedido1(id_Proveedor = '1', ISBN = '0987', Fecha_Pedido = '03/03/2002', Fecha_Entrega = '03/03/2002', Cantidad_Pedida = '3', Precio_Total = '$290')
-    pedidos_insertados = pedidoDAO.insertar(pedido1)
+    pedidos_insertados = PedidoDAO.insertar(pedido1)
     log.debug(f'Registro insertado en la base de datos: {pedidos_insertados}')
 
     # Actualizar un registro
     pedido1 = pedido1(1, 'tukyol', 'Javier', 'Juárez', 'Morales')
-    pedidos_actualizados = pedidoDAO.actualizar(pedido1)
+    pedidos_actualizados = PedidoDAO.actualizar(pedido1)
     log.debug(f'Registros actualizados: {pedidos_actualizados}')
     
 
     # Eliminar un registro
     pedido1 = pedido1(id_Proveedor = 1)
-    pedidos_eliminados = pedidoDAO.borrar(pedido1)
+    pedidos_eliminados = PedidoDAO.borrar(pedido1)
     log.debug(f'Registros eliminados: {pedidos_eliminados}')
     
     # Seleccionar objetos
-    empleados = pedidoDAO.seleccionar()
+    empleados = PedidoDAO.seleccionar()
     for pedido in pedidos:
         log.debug(pedido)

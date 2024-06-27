@@ -1,5 +1,5 @@
 from logger_base import *
-from Proveedor import *
+from proveedor import *
 from Conexion import *
 from cursor_del_pool import *
 

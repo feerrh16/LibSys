@@ -1,7 +1,7 @@
 from asyncio import log
 from logger_base import * 
 
-class pedido:
+class Pedido:
     def __init__(self, id_Proveedor = None, ISBN = None, Fecha_Pedido = None,
                  Fecha_Entrega = None, Cantidad_Pedida = None, Precio_Total = None):
         self._id_Proveedor = id_Proveedor
@@ -70,15 +70,15 @@ class pedido:
         self._Precio_Total = Precio_Total
 
 if __name__ == '__main__':
-    pedido1 = pedido(1, '05762', '03/03/02', '04/03/02', 2, '$290')
+    pedido1 = Pedido(1, '05762', '03/03/02', '04/03/02', 2, '$290')
     log.debug(pedido1)
 
     # Simular un INSERT INTO
-    pedido1 = pedido(id_Proveedor= 1, ISBN= '05762', Fecha_Pedido= '03/03/02', Fecha_Entrega= '04/03/02', 
+    pedido1 = Pedido(id_Proveedor= 1, ISBN= '05762', Fecha_Pedido= '03/03/02', Fecha_Entrega= '04/03/02',
                         Cantidad_Pedida= '2', Precio_Total='$290')
     log.debug(pedido1)
 
     #Simular un DELETE
-    pedido1 = pedido(id_Proveedor=1)
+    pedido1 = Pedido(id_Proveedor=1)
     log.debug(pedido1)
 

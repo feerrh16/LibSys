@@ -23,6 +23,8 @@ class AutorDAO:
     @classmethod
     def insertar(cls, autor):
         with CursorDelPool() as cursor:
+            # Verificamos si existe el autor en la tabla autor_libro
+            cursor.execute('SELECT id_autor FROM autor_libro WHERE id_autor = %s', (autor.id_autor, ))
             valores = (autor.nombre,)
             cursor.execute(cls._INSERTAR, valores)
             log.debug(f'Registro insertado en la base de datos: {autor}')

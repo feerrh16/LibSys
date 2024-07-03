@@ -1114,3 +1114,24 @@ DETAIL:  Ya existe la llave (id_proveedor)=(10).
                 ID: 2
                 ISBN: None
                 
+04:27:05 PM: DEBUG [Venta_Libro.py: 42] 
+                ID: 2
+                ISBN: 3
+                Cantidad = 4
+                
+04:27:05 PM: DEBUG [Venta_Libro.py: 46] 
+                ID: 2
+                ISBN: 3
+                Cantidad = 4
+                
+04:27:05 PM: DEBUG [Venta_Libro.py: 50] 
+                ID: 2
+                ISBN: None
+                Cantidad = None
+                
+04:27:13 PM: INFO [_internal.py: 97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04:27:13 PM: INFO [_internal.py: 97] [33mPress CTRL+C to quit[0m
+04:27:13 PM: INFO [_internal.py: 97]  * Restarting with stat
+04:27:14 PM: WARNING [_internal.py: 97]  * Debugger is active!
+04:27:14 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979

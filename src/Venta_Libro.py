@@ -1,5 +1,4 @@
-from db_management.logger_base import *
-from security.cifrado import *
+from logger_base import *
 
 class Venta_Libro:
     def __init__(self, id_venta = None, ISBN = None, cantidad = None):
@@ -16,9 +15,9 @@ class Venta_Libro:
     
     @property
     def id_venta(self):
-        return self._id_venta = id_venta
+        return self.id_venta
     
-    @ID_Venta.setter
+    @id_venta.setter
     def id_venta(self, id_venta):
         self._id_venta = id_venta
 

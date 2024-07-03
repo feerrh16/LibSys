@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from flask_socketio import SocketIO, send
-from Autor_libroDAO import Autor_LibroDAO
-from Autor_libro import Autor_Libro
+from Autor_LibroDAO import Autor_LibroDAO
+from Autor_Libro import Autor_Libro
 from Autor import Autor
 from ClienteDAO import ClienteDAO
 from Cliente import Cliente
@@ -15,7 +15,7 @@ from Libro import Libro
 from LibroDAO import LibroDAO
 from pedido import Pedido
 from pedidoDAO import PedidoDAO
-from proveedor import Proveedor
+from Proveedor import Proveedor
 from proveedorDAO import ProveedorDAO
 from Tarjeta import Tarjeta
 from TarjetaDAO import TarjetaDAO

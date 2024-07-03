@@ -1,5 +1,4 @@
-from db_management.logger_base import *
-from security.cifrado import *
+from logger_base import *
 
 class TipoVenta:
     def __init__(self, id_tipo = None, nombre = None):
@@ -14,9 +13,9 @@ class TipoVenta:
     
     @property
     def id_tipo(self):
-        return self._id_tipo = id_tipo
+        return self.id_tipo
     
-    @ID_Venta.setter
+    @id_tipo.setter
     def id_tipo(self, id_tipo):
         self._id_tipo = id_tipo
 
@@ -24,7 +23,7 @@ class TipoVenta:
     def nombre(self):
         return self._nombre
     
-    @cantidad.setter
+    @nombre.setter
     def nombre(self, nombre):
         self._nombre = nombre
     
@@ -33,7 +32,7 @@ if __name__ == '__main__':
     log.debug(tipoventa1)
 
     # Simular un INSERT INTO
-    tipoventa1 = TipoVenta(id_tipo= 2, nombre 'Linea')
+    tipoventa1 = TipoVenta(id_tipo= 2, nombre = 'Linea')
     log.debug(tipoventa1)
 
     #Simular un DELETE

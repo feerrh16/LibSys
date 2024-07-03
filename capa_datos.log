@@ -1102,3 +1102,15 @@ DETAIL:  Ya existe la llave (id_proveedor)=(10).
                 ID Autor: 6
                 ISBN: 9780553293357
                 
+04:23:51 PM: DEBUG [TipoVenta.py: 32] 
+                ID: 2
+                ISBN: Linea
+                
+04:23:51 PM: DEBUG [TipoVenta.py: 36] 
+                ID: 2
+                ISBN: Linea
+                
+04:23:51 PM: DEBUG [TipoVenta.py: 40] 
+                ID: 2
+                ISBN: None
+                

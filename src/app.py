@@ -32,7 +32,7 @@ app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
 
 
-@app.route('/')
+@app.route('/Interfaz/')
 def index():
     return render_template('index.html')
 

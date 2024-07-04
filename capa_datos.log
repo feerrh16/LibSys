@@ -1141,3 +1141,87 @@ DETAIL:  Ya existe la llave (id_proveedor)=(10).
 04:28:16 PM: INFO [_internal.py: 97]  * Restarting with stat
 04:28:16 PM: WARNING [_internal.py: 97]  * Debugger is active!
 04:28:16 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979
+05:33:01 PM: INFO [_internal.py: 97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+05:33:01 PM: INFO [_internal.py: 97] [33mPress CTRL+C to quit[0m
+05:33:01 PM: INFO [_internal.py: 97]  * Restarting with stat
+05:33:02 PM: WARNING [_internal.py: 97]  * Debugger is active!
+05:33:02 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979
+05:38:14 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:38:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+05:38:14 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:38:14] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05:38:14 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:38:14] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+05:38:14 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:38:14] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+05:38:14 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:38:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+05:38:56 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:38:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+05:38:56 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:38:56] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+05:38:56 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:38:56] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+05:38:56 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:38:56] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+05:40:54 PM: INFO [_internal.py: 97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+05:40:54 PM: INFO [_internal.py: 97] [33mPress CTRL+C to quit[0m
+05:40:54 PM: INFO [_internal.py: 97]  * Restarting with stat
+05:40:55 PM: WARNING [_internal.py: 97]  * Debugger is active!
+05:40:55 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979
+05:41:25 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:41:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+05:41:25 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:41:25] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05:41:25 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:41:25] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+05:41:25 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:41:25] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+05:42:10 PM: INFO [_internal.py: 97]  * Detected change in 'c:\\LibSys\\src\\app.py', reloading
+05:42:10 PM: INFO [_internal.py: 97]  * Restarting with stat
+05:42:11 PM: WARNING [_internal.py: 97]  * Debugger is active!
+05:42:11 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979
+05:42:16 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:42:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+05:42:16 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:42:16] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+05:42:16 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:42:16] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+05:42:16 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:42:16] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+05:42:27 PM: INFO [_internal.py: 97]  * To enable the debugger you need to enter the security pin:
+05:42:27 PM: INFO [_internal.py: 97]  * Debugger pin code: 129-946-979
+05:42:27 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:42:27] "GET /?__debugger__=yes&cmd=printpin&s=lIyoYkEpH5c7skHZJ5br HTTP/1.1" 200 -
+05:42:48 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:42:48] "GET /?__debugger__=yes&cmd=pinauth&pin=129-946-979&s=lIyoYkEpH5c7skHZJ5br HTTP/1.1" 200 -
+05:43:32 PM: INFO [_internal.py: 97]  * Detected change in 'c:\\LibSys\\src\\app.py', reloading
+05:43:32 PM: INFO [_internal.py: 97]  * Restarting with stat
+05:43:32 PM: WARNING [_internal.py: 97]  * Debugger is active!
+05:43:32 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979
+05:43:38 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:43:38] "[33mGET / HTTP/1.1[0m" 404 -
+05:43:38 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:43:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+05:43:41 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:43:41] "[33mGET / HTTP/1.1[0m" 404 -
+05:44:01 PM: INFO [_internal.py: 97]  * Detected change in 'c:\\LibSys\\src\\app.py', reloading
+05:44:02 PM: INFO [_internal.py: 97]  * Restarting with stat
+05:44:02 PM: WARNING [_internal.py: 97]  * Debugger is active!
+05:44:02 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979
+05:44:05 PM: INFO [_internal.py: 97]  * Detected change in 'c:\\LibSys\\src\\app.py', reloading
+05:44:05 PM: INFO [_internal.py: 97]  * Restarting with stat
+05:44:06 PM: WARNING [_internal.py: 97]  * Debugger is active!
+05:44:06 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979
+05:44:18 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:44:18] "[33mGET / HTTP/1.1[0m" 404 -
+05:44:30 PM: INFO [_internal.py: 97]  * Detected change in 'c:\\LibSys\\src\\app.py', reloading
+05:44:31 PM: INFO [_internal.py: 97]  * Restarting with stat
+05:44:32 PM: WARNING [_internal.py: 97]  * Debugger is active!
+05:44:32 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979
+05:44:35 PM: INFO [_internal.py: 97]  * Detected change in 'c:\\LibSys\\src\\app.py', reloading
+05:44:36 PM: INFO [_internal.py: 97]  * Restarting with stat
+05:44:37 PM: WARNING [_internal.py: 97]  * Debugger is active!
+05:44:37 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979
+05:44:40 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:44:40] "[33mGET / HTTP/1.1[0m" 404 -
+05:45:28 PM: INFO [_internal.py: 97]  * Detected change in 'c:\\LibSys\\src\\app.py', reloading
+05:45:28 PM: INFO [_internal.py: 97]  * Restarting with stat
+05:45:29 PM: WARNING [_internal.py: 97]  * Debugger is active!
+05:45:29 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979
+05:45:34 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:45:34] "[33mGET / HTTP/1.1[0m" 404 -
+05:45:35 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 17:45:35] "[33mGET / HTTP/1.1[0m" 404 -
+06:14:37 PM: INFO [_internal.py: 97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+06:14:37 PM: INFO [_internal.py: 97] [33mPress CTRL+C to quit[0m
+06:14:37 PM: INFO [_internal.py: 97]  * Restarting with stat
+06:14:37 PM: WARNING [_internal.py: 97]  * Debugger is active!
+06:14:37 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979
+06:14:40 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 18:14:40] "[33mGET / HTTP/1.1[0m" 404 -
+06:15:39 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 18:15:39] "[33mGET / HTTP/1.1[0m" 404 -
+06:16:56 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 18:16:56] "[33mGET / HTTP/1.1[0m" 404 -
+06:20:12 PM: INFO [_internal.py: 97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+06:20:12 PM: INFO [_internal.py: 97] [33mPress CTRL+C to quit[0m
+06:20:12 PM: INFO [_internal.py: 97]  * Restarting with stat
+06:20:12 PM: WARNING [_internal.py: 97]  * Debugger is active!
+06:20:12 PM: INFO [_internal.py: 97]  * Debugger PIN: 129-946-979
+06:20:18 PM: INFO [_internal.py: 97] 127.0.0.1 - - [03/Jul/2024 18:20:18] "[33mGET / HTTP/1.1[0m" 404 -
